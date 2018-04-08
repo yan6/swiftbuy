@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="网上购物网站"/>
+    <meta name="description" content="迅购网为您提供网上购物网站等相关信息。"/>
+    <title>网上购物网站 - 迅购网</title>
+</head>
+<body>
+<script type="text/javascript">
+    var city = "";
+
+    function currentCity() {
+        $.ajax({
+            url: 'http://localhost:8080/api/address/getCurrentCity',
+            type: 'get',
+            dataType: 'json',
+            success: function (data) { //返回的数据
+                if (data.resultCode == 200) {
+                    city = data.resultMessage;
+                    $("#cityName").html(city);
+                    address(city)
+                }
+            }
+        })
+    }
+
+    function address(city) {
+        $.ajax({
+            url: 'http://localhost:8080/api/address/getCountyList?city=' + city,
+            type: 'GET',
+            dataType: 'json',
+            success: function (result) {
+                showCounty(result);
+            },
+            error: function () {
+                alert(" 未知错误！");
+            }
+        });
+
+        function showCounty(result) {
+            for (var i = 0; i < result.length(); i++) {
+                var str = result[i];
+                $('#county').html(str);
+            }
+        }
+    }
+
+</script>
+<div id="cityName">
+    <button type="button" name="city" onclick="currentCity()">当前城市</button>
+</div>
+<div id="county"></div>
+
+<script src="./js/jquery-1.7.2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/swiftbuy.iml" filepath="$PROJECT_DIR$/swiftbuy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swiftbuy-adminWeb/swiftbuy-adminWeb.iml" filepath="$PROJECT_DIR$/swiftbuy-adminWeb/swiftbuy-adminWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swiftbuy-common/swiftbuy-common.iml" filepath="$PROJECT_DIR$/swiftbuy-common/swiftbuy-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swiftbuy-core/swiftbuy-core.iml" filepath="$PROJECT_DIR$/swiftbuy-core/swiftbuy-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swiftbuy-dao/swiftbuy-dao.iml" filepath="$PROJECT_DIR$/swiftbuy-dao/swiftbuy-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swiftbuy-service/swiftbuy-service.iml" filepath="$PROJECT_DIR$/swiftbuy-service/swiftbuy-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swiftbuy-webapp/swiftbuy-webapp.iml" filepath="$PROJECT_DIR$/swiftbuy-webapp/swiftbuy-webapp.iml" />
+    </modules>
+  </component>
+</project>

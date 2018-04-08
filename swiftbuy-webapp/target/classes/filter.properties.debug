@@ -1,0 +1,2 @@
+swiftbuy.log.appender=console
+swiftbuy.log.level=DEBUG

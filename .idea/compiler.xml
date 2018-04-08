@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="swiftbuy-adminWeb" />
+        <module name="swiftbuy-common" />
+        <module name="swiftbuy-core" />
+        <module name="swiftbuy-dao" />
+        <module name="swiftbuy-service" />
+        <module name="swiftbuy-webapp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="swiftbuy" target="1.5" />
+      <module name="swiftbuy-admin" target="1.8" />
+      <module name="swiftbuy-adminWeb" target="1.8" />
+      <module name="swiftbuy-common" target="1.8" />
+      <module name="swiftbuy-core" target="1.8" />
+      <module name="swiftbuy-dao" target="1.8" />
+      <module name="swiftbuy-service" target="1.8" />
+      <module name="swiftbuy-webapp" target="1.8" />
+      <module name="swiftbuy-webapp-common" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

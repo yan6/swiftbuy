@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>swiftbuy</artifactId>
+        <groupId>com.ywj.swiftbuy</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>swiftbuy-dao</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.ywj.swiftbuy</groupId>
+            <artifactId>swiftbuy-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>jooq</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>jooq-meta</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>jooq-codegen</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <defaultGoal>install</defaultGoal>
+        <filters>
+            <filter>src/main/resources/database.properties.${env}</filter>
+        </filters>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
+        <!-- jOOQ code generation configuration -->
+        <plugins>
+            <!-- Read db configuration from file in different profile -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
+                <version>1.0-alpha-2</version>
+                <executions>
+                    <execution>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>read-project-properties</goal>
+                        </goals>
+                        <configuration>
+                            <files>
+                                <file>src/main/resources/database.properties.${env}</file>
+                            </files>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <!-- Specify the maven code generator plugin -->
+                <groupId>org.jooq</groupId>
+                <artifactId>jooq-codegen-maven</artifactId>
+                <version>${org.jooq.version}</version>
+
+                <!-- The plugin should hook into the generate goal -->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+                <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>${mysql.connector.version}</version>
+                    </dependency>
+                </dependencies>
+
+                <!-- Specify the plugin configuration.
+                     The configuration format is the same as for the standalone code generator -->
+                <configuration>
+
+                    <!-- JDBC connection parameters -->
+                    <jdbc>
+                        <driver>${db.driverName}</driver>
+                        <url>${db.url}</url>
+                        <user>${db.username}</user>
+                        <password>${db.password}</password>
+                    </jdbc>
+
+                    <!-- Generator parameters -->
+                    <!-- Generator parameters -->
+                    <generator>
+                        <name>org.jooq.util.DefaultGenerator</name>
+                        <database>
+                            <name>org.jooq.util.mysql.MySQLDatabase</name>
+                            <includes>.*</includes>
+                            <excludes>xdual</excludes>
+                            <inputSchema>swiftbuy</inputSchema>
+                            <customTypes>
+                            </customTypes>
+                            <forcedTypes>
+                                <forcedType>
+                                    <name>java.lang.Boolean</name>
+                                    <expression>.*\.is_.*</expression>
+                                </forcedType>
+                                <forcedType>
+                                    <name>Integer</name>
+                                    <expression>.*\.id</expression>
+                                </forcedType>
+                            </forcedTypes>
+                        </database>
+                        <target>
+                            <packageName>com.ywj.swiftbuy.dao.model</packageName>
+                            <directory>target/generated-sources/java</directory>
+                        </target>
+                        <generate>
+                            <fluentSetters>true</fluentSetters>
+                            <globalObjectReferences>true</globalObjectReferences>
+                        </generate>
+                    </generator>
+
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

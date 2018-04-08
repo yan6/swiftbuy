@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <context:component-scan base-package="com.ywj.swiftbuy.dao" />
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="${db.driverName}" />
+        <property name="jdbcUrl" value="${db.url}" />
+        <property name="user" value="${db.username}" />
+        <property name="password" value="${db.password}" />
+        <property name="initialPoolSize" value="10" />
+        <property name="minPoolSize" value="10" />
+        <property name="maxPoolSize" value="50" />
+        <property name="autoCommitOnClose" value="true" />
+        <property name="testConnectionOnCheckin" value="true" />
+        <property name="checkoutTimeout" value="5000" />
+        <property name="idleConnectionTestPeriod" value="200" />
+        <property name="acquireIncrement" value="1" />
+        <property name="maxIdleTime" value="25200" />  <!-- How long to keep unused connections around. MySQL times out idle connections after 8 hours(28,800 seconds), so ensure this value is below MySQL idle timeout-->
+        <property name="maxIdleTimeExcessConnections" value="1800" />  <!-- How long to hang on to excess unused connections after traffic spike  -->
+        <property name="maxStatements" value="0" />  <!-- 0 means: statement caching is turned off.  -->
+        <property name="preferredTestQuery" value="select 1;" />
+    </bean>
+
+    <!-- Configure Spring's transaction manager to use a DataSource -->
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!-- Configure jOOQ's ConnectionProvider to use Spring's TransactionAwareDataSourceProxy,
+         which can dynamically discover the transaction context -->
+    <bean id="transactionAwareDataSource"
+          class="org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy">
+        <constructor-arg ref="dataSource" />
+    </bean>
+
+    <bean id="connectionProvider" class="org.jooq.impl.DataSourceConnectionProvider" >
+        <constructor-arg ref="transactionAwareDataSource" />
+    </bean>
+
+    <!-- Invoking an internal, package-private constructor for the example
+             Implement your own Configuration for more reliable behaviour -->
+    <bean id="jooqConfig" class="org.jooq.impl.DefaultConfiguration">
+        <constructor-arg index="0" ref="connectionProvider" />
+        <!-- Pass in your jOOQ TransactionProvider if you want to use jOOQ's transaction API -->
+        <constructor-arg index="1"><null /></constructor-arg>
+        <constructor-arg index="2"><null /></constructor-arg>
+        <constructor-arg index="3"><null /></constructor-arg>
+        <constructor-arg index="4"><null /></constructor-arg>
+        <constructor-arg index="5"><null /></constructor-arg>
+        <constructor-arg index="6"><value type="org.jooq.SQLDialect">MYSQL</value></constructor-arg>
+        <constructor-arg index="7"><null /></constructor-arg>
+        <constructor-arg index="8"><null /></constructor-arg>
+    </bean>
+
+    <!-- Configure the DSL object, optionally overriding jOOQ Exceptions with Spring Exceptions -->
+    <bean id="jooqContext" class="org.jooq.impl.DefaultDSLContext">
+        <constructor-arg ref="jooqConfig" />
+    </bean>
+</beans>
