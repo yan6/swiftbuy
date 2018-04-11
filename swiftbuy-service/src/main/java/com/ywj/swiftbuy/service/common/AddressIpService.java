@@ -10,11 +10,13 @@ public interface AddressIpService {
 
     List<Address> getCountyList(String city);
 
-    boolean insert(String city, String county);
+    boolean insert(String city, String county, String province);
 
     boolean update(Address address);
 
     boolean exist(String city,String county);
 
     int getId(String city,String county);
+
+    String getAddressStr(int id);
 }

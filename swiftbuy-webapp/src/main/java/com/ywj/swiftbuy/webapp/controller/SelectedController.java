@@ -7,14 +7,12 @@ import com.ywj.swiftbuy.service.common.*;
 import com.ywj.swiftbuy.service.utils.NextPageUrlGenerator;
 import com.ywj.swiftbuy.service.utils.NextPageUrlUtils;
 import com.ywj.swiftbuy.utils.ListUtils;
-import com.ywj.swiftbuy.web.User;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -37,8 +35,8 @@ import java.util.Random;
  * 这三种方式都是跳到首页
  * <p>
  * <p>
- *
- *
+ * <p>
+ * <p>
  * 1.首页之  默认商品列表或检索商品列表
  * 2.首页之  推荐商品列表
  * 3.首页之  热门商品列表
@@ -52,9 +50,6 @@ public class SelectedController {
 
     @Autowired
     private BusinessService businessService;
-
-    @Autowired
-    private AddressIpService addressIpService;
 
     @Autowired
     private CategoryService categoryService;
@@ -71,31 +66,27 @@ public class SelectedController {
     @Autowired
     private PopularGoodsService popularGoodsService;
 
-    @RequestMapping(value = "", method = RequestMethod.GET)
-    public String getSelected(@RequestParam(value = "username", required = false, defaultValue = "zhangsan") String username,
-                              Model model) {
-        User user = new User();
-        user.setUsername(username);
-        model.addAttribute("user", user);
-        return "selected";
-    }
-
     /**
-     * 附近商品列表
+     * 通过三级联动检索出商品列表    确定，跳转到另一页面  city,county,类型
      * 注：根据区域，排序策略选出num个商品
+     * 如果不能分页的话，就不做
+     * <p>
+     * 1.商品类型必填
+     * 2.省  省市，省市区
      */
     @RequestMapping(value = "/recentGoodsList", method = RequestMethod.GET)
     @ResponseBody
-    public RecentGoods getRecentGoodsList(@RequestParam(value = "city", required = false, defaultValue = "北京市") String city,
-                                          @RequestParam(value = "county", required = false, defaultValue = "昌平区") String county,
-                                          @RequestParam(value = "categoryName", required = false, defaultValue = "服装") String categoryName,
+    public RecentGoods getRecentGoodsList(@RequestParam(value = "categoryName", required = false, defaultValue = "服装") String categoryName,
+                                          @RequestParam(value = "province", required = false, defaultValue = "") String province,
+                                          @RequestParam(value = "city", required = false, defaultValue = "") String city,
+                                          @RequestParam(value = "county", required = false, defaultValue = "") String county,
                                           @RequestParam(value = "strategy", required = false, defaultValue = "date") SortStrategy strategy,
                                           @RequestParam(value = "start", required = false, defaultValue = "0") int start,
                                           @RequestParam(value = "num", required = false, defaultValue = "8") int num) {
         //city，county定位到商家business_id   ,business_id,categoryName定位到商品
         //TODO city county categoryName缺少，就默认一个推荐列表
         RecentGoods recentGoods = new RecentGoods();
-        List<Integer> businessIdList = businessService.getIdList(city, county);
+        List<Integer> businessIdList = getBusinessIdList(province, city, county);
         int categoryId = categoryService.getIdByName(categoryName);
         if (CollectionUtils.isEmpty(businessIdList) || categoryId < 1)
             return null;
@@ -109,6 +100,18 @@ public class SelectedController {
     }
 
     /**
+     * 默认第一位置展示的商品列表
+     *
+     * @return
+     */
+    @RequestMapping(value = "/defaultGoodsList", method = RequestMethod.GET)
+    @ResponseBody
+    public List<GoodsBean> defaultGoodsList(@RequestParam(value = "num", required = false, defaultValue = "8") int num) {
+        return goodsService.getDefaultShowList(num);
+    }
+
+    /**
+     * 第二位置
      * 推荐商品(num个)
      * 用户浏览过，买过，搜索过，各种历史数据推荐出商品，也可以根据用户做个性化推荐
      */
@@ -131,6 +134,7 @@ public class SelectedController {
 
 
     /**
+     * 第三位置
      * 热门商品
      * 购买量最多的商品num/2个，popular_goods(管理员设置)中num/2个，混合排序
      */
@@ -159,5 +163,25 @@ public class SelectedController {
         return NextPageUrlUtils.nextPageUrl(parameterList, "/api/selected/recentGoodsList", "localhost:8080");
     }
 
+    private List<Integer> getBusinessIdList(String province, String city, String county) {
+        if (StringUtils.isEmpty(province))
+            return businessService.getIdListByP("北京市");
+        if (StringUtils.isEmpty(city) && StringUtils.isEmpty(county))
+            return businessService.getIdListByP(province);
+        else if (getFourCity().contains(province))
+            city = province;
+        if (StringUtils.isEmpty(county))
+            return businessService.getIdListByPC(province, city);
+        return businessService.getIdListByPCC(province, city, county);
+    }
+
+    private List<String> getFourCity() {
+        List<String> list = new ArrayList<>();
+        list.add("北京市");
+        list.add("天津市");
+        list.add("上海市");
+        list.add("重庆市");
+        return list;
+    }
 
 }

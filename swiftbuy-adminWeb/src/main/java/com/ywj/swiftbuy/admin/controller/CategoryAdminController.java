@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping(value = "/admin")
+@RequestMapping(value = "/admin/category")
 public class CategoryAdminController {
 
     private static final Logger LOG = LoggerFactory.getLogger(CategoryAdminController.class);
@@ -26,7 +26,7 @@ public class CategoryAdminController {
     @Autowired
     private CategoryService categoryService;
 
-    @RequestMapping(value = "/category/insert", method = RequestMethod.GET)
+    @RequestMapping(value = "/insert", method = RequestMethod.GET)
     @ResponseBody
     @JsonView(JacksonViews.Admin.class)
     public APIResponse insert(@RequestParam(value = "name", required = true) String name,
@@ -40,7 +40,7 @@ public class CategoryAdminController {
         return new FailureAPIResponse("分类存入失败");
     }
 
-    @RequestMapping(value = "/category/update", method = RequestMethod.GET)
+    @RequestMapping(value = "/update", method = RequestMethod.GET)
     @ResponseBody
     @JsonView(JacksonViews.Admin.class)
     public APIResponse update(@RequestParam(value = "id", required = false, defaultValue = "-1") int id,

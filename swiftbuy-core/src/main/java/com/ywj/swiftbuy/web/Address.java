@@ -21,11 +21,13 @@ public class Address implements Serializable {
     private int id;
     private String city;
     private String county;
+    private String province;
     private Date update_time;
 
-    public Address(String city,String county){
+    public Address(String city,String county,String province){
         this.city=city;
         this.county=county;
+        this.province=province;
         this.update_time=new Date();
         return;
     }

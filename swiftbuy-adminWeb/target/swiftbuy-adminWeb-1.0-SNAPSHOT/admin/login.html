@@ -105,7 +105,7 @@
                 //几个参数需要注意一下
                 type: "POST",//方法类型
                 dataType: "json",//预期服务器返回的数据类型
-                url: "/api/admin/register",//url
+                url: "/api/admin/login",//url
                 data: $('#user').serialize(),
                 success: function (result) {
                     console.log(result);//打印服务端返回的数据(调试用)
@@ -123,7 +123,7 @@
     <div class="container">
         <div class="register-box">
             <div class="reg-slogan">
-                迅购网 新用户注册
+                迅购网 后台管理
             </div>
             <form id="user">
                 <div class="reg-form" id="js-form-mobile">
@@ -137,51 +137,11 @@
                         <label for="js-mobile_pwd_ipt">设置密码</label>
                         <input type="password" name="password" id="js-mobile_pwd_ipt" class="text"/>
                     </div>
-                    <div class="cell">
-                        <label for="js-mobile_ipt">填写手机号</label>
-                        <input type="text" name="phone" id="js-mobile_ipt" class="text" maxlength="11"/>
-                    </div>
-                    <!-- !短信验证码 -->
-                    <div class="cell vcode">
-                        <label for="js-mobile_vcode_ipt">输入验证码</label>
-                        <input type="text" name="code" id="js-mobile_vcode_ipt" class="text" maxlength="6"/>
-                        <a href="javascript:;" id="js-get_mobile_vcode" class="button btn-disabled">
-                            免费获取验证码</a></div>
                     <div class="bottom">
-                        <a id="js-mobile_btn" href="javascript:;" class="button btn-green" onclick="register()">
-                            立即注册</a></div>
+                        <a id="js-mobile_btn" href="javascript:;" class="button btn-green" onclick="login()">
+                            登录</a></div>
                 </div>
             </form>
-
-            <div class="reg-form" id="js-form-mail" style="display: none;">
-                <div class="cell">
-                    <label for="js-mail_ipt">输入你的常用邮箱</label>
-                    <input type="text" name="email" id="js-mail_ipt" class="text"/>
-                </div>
-                <div class="cell">
-                    <label for="js-mail_pwd_ipt">设置密码</label>
-                    <input type="password" name="passwd" id="js-mail_pwd_ipt" class="text"/>
-                    <input type="text" name="passwd" id="js-mail_pwd_ipt_txt" class="text" maxlength="20"
-                           style="display:none;"/>
-                    <b class="icon-form ifm-view js-view-pwd" title="查看密码" style="display: none">
-                        查看密码</b></div>
-                <!-- !短信验证码 -->
-                <div class="cell vcode">
-                    <label for="js-mail_vcode_ipt">输入验证码</label>
-                    <input type="text" name="code" id="js-mail_vcode_ipt" class="text" maxlength="4"/>
-                    <img id="js-mail_vcode_img" src="http://passport.115.com/?ct=securimage&ac=email" alt="code"/>
-                    <span>
-					<a id="js-mail_vcode_a" href="javascript:;"
-                       code_src="http://passport.115.com/?ct=securimage&amp;ac=email">
-					换一张</a></span></div>
-                <div class="user-agreement">
-                    <input type="checkbox" id="js-mail_chk" checked="true"/>
-                    <label for="js-mail_chk">同意<a href="http://115.com/agreement.html" target="_blank">《115网盘用户服务协议》</a></label>
-                </div>
-                <div class="bottom">
-                    <a id="js-mail_btn" href="javascript:;" class="button btn-green">
-                        立即注册</a></div>
-            </div>
         </div>
     </div>
 </div>

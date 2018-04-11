@@ -39,11 +39,46 @@ public class BusinessServiceImpl extends CommonService implements BusinessServic
     @Autowired
     private AddressIpService addressIpService;
 
+    /**
+     * 根据[省]获取商家id
+     *
+     * @param province@return
+     */
     @Override
-    public List<Integer> getIdList(String city, String county) {
+    public List<Integer> getIdListByP(String province) {
         return select(TABLE,
                 TABLE.ID,
-                TABLE.CITY.eq(city).and(TABLE.COUNTY.eq(county)));
+                TABLE.PROVINCE.eq(province));
+    }
+
+    /**
+     * @param province
+     * @param city
+     * @return
+     */
+    @Override
+    public List<Integer> getIdListByPC(String province, String city) {
+        return select(TABLE,
+                TABLE.ID,
+                TABLE.PROVINCE.eq(province).and(TABLE.CITY.eq(city)));
+    }
+
+    /**
+     * @param province
+     * @param city
+     * @param county
+     * @return
+     */
+    @Override
+    public List<Integer> getIdListByPCC(String province, String city, String county) {
+        return select(TABLE,
+                TABLE.ID,
+                TABLE.PROVINCE.eq(province).and(TABLE.CITY.eq(city)).and(TABLE.COUNTY.eq(county)));
+    }
+
+    @Override
+    public List<BusinessBean> getAllBusiness() {
+        return selectAll(TABLE, BusinessBean.class);
     }
 
     @Override
@@ -85,6 +120,22 @@ public class BusinessServiceImpl extends CommonService implements BusinessServic
             return true;
         }
         return false;
+    }
+
+    @Override
+    public List<BusinessBean> getBusinessListByAddress(String query) {
+        query = "%" + query + "%";
+        return select(TABLE,
+                TABLE.PROVINCE.like(query).or(TABLE.CITY.like(query)).or(TABLE.COUNTY.like(query)),
+                BusinessBean.class);
+    }
+
+    @Override
+    public List<BusinessBean> getBusinessListByName(String query) {
+        query = "%" + query + "%";
+        return select(TABLE,
+                TABLE.NAME.like(query),
+                BusinessBean.class);
     }
 
     private User setUser(BusinessBean business) {

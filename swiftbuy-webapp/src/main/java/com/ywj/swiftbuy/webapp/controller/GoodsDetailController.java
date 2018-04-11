@@ -1,5 +1,6 @@
 package com.ywj.swiftbuy.webapp.controller;
 
+import com.ywj.swiftbuy.bean.GoodsBean;
 import com.ywj.swiftbuy.model.GoodsDetailBean;
 import com.ywj.swiftbuy.service.common.*;
 import org.slf4j.Logger;
@@ -33,20 +34,18 @@ public class GoodsDetailController {
      * 访问这个接口打开商品详情页
      *
      * @param id
-     * @param businessId
      * @return
      */
     @RequestMapping(value = "/detail", method = RequestMethod.GET)
     @ResponseBody
-    public GoodsDetailBean getGoodsDetail(@RequestParam(value = "id", required = true) int id,
-                                          @RequestParam(value = "businessId", required = true) int businessId) {
+    public GoodsDetailBean getGoodsDetail(@RequestParam(value = "id", required = true) int id) {
         if (id < 0)
             id = 1;
-        if (businessId < 0)
-            businessId = 1;
         GoodsDetailBean goodsDetailBean = new GoodsDetailBean();
-        goodsDetailBean.setGoods(goodsService.getGoodsById(id));
-        goodsDetailBean.setBusiness(businessService.get(businessId));
+        GoodsBean goods = goodsService.getGoodsById(id);
+        goodsDetailBean.setGoods(goods);
+        if (goods != null)
+            goodsDetailBean.setBusiness(businessService.get(goods.getBusinessId()));
         goodsDetailBean.setReplyBeanList(replyService.getReplyBeanList(id));
         return goodsDetailBean;
     }

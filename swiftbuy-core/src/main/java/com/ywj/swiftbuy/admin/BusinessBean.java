@@ -23,14 +23,16 @@ public class BusinessBean {
     private String phone;
     private String password;
     private String icon;
+    private String province;
 
-    public BusinessBean(String name,String description,String city,String county,String phone,String password){
+    public BusinessBean(String name,String description,String city,String county,String phone,String password,String province){
         this.name=name;
         this.description=description;
         this.city=city;
         this.county=county;
         this.phone=phone;
         this.password=password;
+        this.province=province;
         this.createTime=new Date();
         this.updateTime=new Date();
         return;

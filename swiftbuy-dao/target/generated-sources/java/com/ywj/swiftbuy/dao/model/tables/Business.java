@@ -11,7 +11,7 @@ package com.ywj.swiftbuy.dao.model.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Business extends org.jooq.impl.TableImpl<com.ywj.swiftbuy.dao.model.tables.records.BusinessRecord> {
 
-	private static final long serialVersionUID = -1929048201;
+	private static final long serialVersionUID = 395832464;
 
 	/**
 	 * The singleton instance of <code>swiftbuy.business</code>
@@ -80,6 +80,11 @@ public class Business extends org.jooq.impl.TableImpl<com.ywj.swiftbuy.dao.model
 	 * The column <code>swiftbuy.business.icon</code>. 图标
 	 */
 	public final org.jooq.TableField<com.ywj.swiftbuy.dao.model.tables.records.BusinessRecord, java.lang.String> ICON = createField("icon", org.jooq.impl.SQLDataType.VARCHAR.length(1000), this, "图标");
+
+	/**
+	 * The column <code>swiftbuy.business.province</code>.
+	 */
+	public final org.jooq.TableField<com.ywj.swiftbuy.dao.model.tables.records.BusinessRecord, java.lang.String> PROVINCE = createField("province", org.jooq.impl.SQLDataType.VARCHAR.length(255), this, "");
 
 	/**
 	 * Create a <code>swiftbuy.business</code> table reference

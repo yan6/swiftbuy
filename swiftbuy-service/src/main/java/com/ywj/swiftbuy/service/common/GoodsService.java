@@ -26,4 +26,6 @@ public interface GoodsService {
     int getRemainCount(int id);
 
     boolean updateRemainCount(int id, int count);
+
+    List<GoodsBean> getDefaultShowList(int num);
 }

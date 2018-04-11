@@ -19,6 +19,11 @@ public class Tables {
 	public static final com.ywj.swiftbuy.dao.model.tables.Address ADDRESS = com.ywj.swiftbuy.dao.model.tables.Address.ADDRESS;
 
 	/**
+	 * The table swiftbuy.admin_account
+	 */
+	public static final com.ywj.swiftbuy.dao.model.tables.AdminAccount ADMIN_ACCOUNT = com.ywj.swiftbuy.dao.model.tables.AdminAccount.ADMIN_ACCOUNT;
+
+	/**
 	 * The table swiftbuy.business
 	 */
 	public static final com.ywj.swiftbuy.dao.model.tables.Business BUSINESS = com.ywj.swiftbuy.dao.model.tables.Business.BUSINESS;
@@ -57,6 +62,11 @@ public class Tables {
 	 * The table swiftbuy.search_history
 	 */
 	public static final com.ywj.swiftbuy.dao.model.tables.SearchHistory SEARCH_HISTORY = com.ywj.swiftbuy.dao.model.tables.SearchHistory.SEARCH_HISTORY;
+
+	/**
+	 * The table swiftbuy.selected_goods
+	 */
+	public static final com.ywj.swiftbuy.dao.model.tables.SelectedGoods SELECTED_GOODS = com.ywj.swiftbuy.dao.model.tables.SelectedGoods.SELECTED_GOODS;
 
 	/**
 	 * The table swiftbuy.shopping_cart

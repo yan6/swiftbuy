@@ -1,3 +1,4 @@
+com/ywj/swiftbuy/service/admin/Impl/AdminLoginServiceImpl.class
 com/ywj/swiftbuy/service/common/Impl/HistoryServiceImpl.class
 com/ywj/swiftbuy/service/common/Impl/ShoppingCartServiceImpl.class
 com/ywj/swiftbuy/service/utils/NextPageUrlGenerator$Parameter.class
@@ -25,6 +26,7 @@ com/ywj/swiftbuy/service/utils/UrlUtils.class
 com/ywj/swiftbuy/service/common/Impl/AccountServiceImpl.class
 com/ywj/swiftbuy/service/admin/ToolService.class
 com/ywj/swiftbuy/service/common/JooqService$PostProcessorWithReturn.class
+com/ywj/swiftbuy/service/admin/AdminLoginService.class
 com/ywj/swiftbuy/service/utils/NextPageUrlGenerator.class
 com/ywj/swiftbuy/service/common/ReplyService.class
 com/ywj/swiftbuy/service/common/GoodsService.class

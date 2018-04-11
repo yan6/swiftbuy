@@ -29,6 +29,7 @@ com/ywj/swiftbuy/bean/ShoppingCartStatus.class
 com/ywj/swiftbuy/thread/ThreadPool.class
 com/ywj/swiftbuy/model/RecentGoods.class
 com/ywj/swiftbuy/constant/RequestParameter$ReplyStrategy.class
+com/ywj/swiftbuy/model/UserListItem.class
 com/ywj/swiftbuy/bean/SearchHistory.class
 com/ywj/swiftbuy/model/GoodsDetailBean.class
 com/ywj/swiftbuy/admin/BusinessBean.class
