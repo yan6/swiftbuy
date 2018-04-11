@@ -9,116 +9,7 @@
     <bookmark url="file://$USER_HOME$/mywork/baobab/baobab-service/src/main/java/com/wandoujia/baobab/service/common/impl/RankListServiceImpl.java" description="&#10;    public boolean updateNewRankList(){&#10;        u..." line="167" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f564e48c-bbde-4750-bb2e-84432cdb7848" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/webapp/admin/adminSelected.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/BusinessListItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/UserQueryType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/admin/AdminLoginService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/admin/Impl/AdminLoginServiceImpl.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/admin/register.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/create.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/detail.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/selected.jsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/webapp/admin/register.html" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/webapp/admin/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/classes/com/ywj/swiftbuy/admin/controller/AddressAdminController.class" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/classes/com/ywj/swiftbuy/admin/controller/AddressAdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/classes/com/ywj/swiftbuy/admin/controller/BusinessAccountController.class" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/classes/com/ywj/swiftbuy/admin/controller/BusinessAccountController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/classes/com/ywj/swiftbuy/admin/controller/CategoryAdminController.class" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/classes/com/ywj/swiftbuy/admin/controller/CategoryAdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/classes/com/ywj/swiftbuy/admin/controller/GoodsAdminController.class" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/classes/com/ywj/swiftbuy/admin/controller/GoodsAdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/classes/com/ywj/swiftbuy/admin/controller/UserController.class" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/classes/com/ywj/swiftbuy/admin/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/admin/controller/AddressAdminController.class" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/admin/controller/AddressAdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/admin/controller/BusinessAccountController.class" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/admin/controller/BusinessAccountController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/admin/controller/CategoryAdminController.class" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/admin/controller/CategoryAdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/admin/controller/GoodsAdminController.class" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/admin/controller/GoodsAdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/admin/controller/UserController.class" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/admin/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-common-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-core-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-core-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-dao-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-service-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-common/target/swiftbuy-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-common/target/swiftbuy-common-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/admin/BusinessBean.class" afterPath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/admin/BusinessBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/bean/GoodsBean.class" afterPath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/bean/GoodsBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/web/Address.class" afterPath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/web/Address.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-core/target/swiftbuy-core-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-core/target/swiftbuy-core-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/Keys$Identities0.class" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/Keys$Identities0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/Keys$UniqueKeys0.class" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/Keys$UniqueKeys0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/Keys.class" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/Keys.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/Swiftbuy.class" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/Swiftbuy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/Tables.class" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/Tables.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/tables/Address.class" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/tables/Address.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/tables/Business.class" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/tables/Business.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/tables/records/AddressRecord.class" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/tables/records/AddressRecord.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/tables/records/BusinessRecord.class" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/tables/records/BusinessRecord.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/swiftbuy-dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/swiftbuy-dao-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/AddressIpService.class" afterPath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/AddressIpService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/BusinessService.class" afterPath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/BusinessService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/GoodsService.class" afterPath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/GoodsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/Impl/AddressIpServiceImpl.class" afterPath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/Impl/AddressIpServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/Impl/BusinessServiceImpl.class" afterPath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/Impl/BusinessServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/Impl/CategoryServiceImpl.class" afterPath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/Impl/CategoryServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/Impl/GoodsServiceImpl$1.class" afterPath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/Impl/GoodsServiceImpl$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/Impl/GoodsServiceImpl.class" afterPath="$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/Impl/GoodsServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/target/swiftbuy-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-service/target/swiftbuy-service-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/classes/com/ywj/swiftbuy/webapp/controller/GoodsDetailController.class" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/classes/com/ywj/swiftbuy/webapp/controller/GoodsDetailController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/classes/com/ywj/swiftbuy/webapp/controller/SelectedController.class" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/classes/com/ywj/swiftbuy/webapp/controller/SelectedController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/webapp/controller/GoodsDetailController.class" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/webapp/controller/GoodsDetailController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/webapp/controller/SelectedController.class" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/webapp/controller/SelectedController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-common-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-core-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-core-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-dao-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-service-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp.war" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/AddressAdminController.java" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/AddressAdminController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/BusinessAccountController.java" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/BusinessAccountController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/CategoryAdminController.java" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/CategoryAdminController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/GoodsAdminController.java" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/GoodsAdminController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/UserController.java" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/webapp/admin/components/angular/angular.js" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/webapp/admin/components/angular/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/webapp/admin/components/angular/angular.min.js" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/webapp/admin/components/angular/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/webapp/admin/javascript/web.js" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/webapp/admin/javascript/web.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/admin/components/angular/angular.js" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/admin/components/angular/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/admin/components/angular/angular.min.js" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/admin/components/angular/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/admin/javascript/web.js" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/admin/javascript/web.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-common/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/swiftbuy-common/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/admin/BusinessBean.java" afterPath="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/admin/BusinessBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/GoodsBean.java" afterPath="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/GoodsBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/web/Address.java" afterPath="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/web/Address.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/web/User.java" afterPath="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/web/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-core/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/swiftbuy-core/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/swiftbuy-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/swiftbuy-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/Keys.java" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/Keys.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/Swiftbuy.java" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/Swiftbuy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/Tables.java" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/Tables.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/tables/Address.java" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/tables/Address.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/tables/Business.java" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/tables/Business.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/tables/records/AddressRecord.java" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/tables/records/AddressRecord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/tables/records/BusinessRecord.java" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/tables/records/BusinessRecord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/AccountService.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/AccountService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/AddressIpService.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/AddressIpService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/BusinessService.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/BusinessService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/GoodsService.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/GoodsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/AccountServiceImpl.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/AccountServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/AddressIpServiceImpl.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/AddressIpServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/BusinessServiceImpl.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/BusinessServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/CategoryServiceImpl.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/CategoryServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/GoodsServiceImpl.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/GoodsServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/swiftbuy-service/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/swiftbuy-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/swiftbuy-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/GoodsDetailController.java" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/GoodsDetailController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/SelectedController.java" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/SelectedController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/views/hello.html" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/views/hello.html" />
-    </list>
+    <list default="true" id="f564e48c-bbde-4750-bb2e-84432cdb7848" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/swiftbuy-webapp/target/" />
@@ -141,8 +32,8 @@
       <file leaf-file-name="GoodsAdminController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/GoodsAdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="104" column="28" lean-forward="false" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="28" />
+            <state relative-caret-position="1168">
+              <caret line="95" column="23" lean-forward="true" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -8620,12 +8511,12 @@
       <workItem from="1521525602894" duration="39497000" />
       <workItem from="1521782777037" duration="31977000" />
       <workItem from="1522403557266" duration="1124000" />
-      <workItem from="1522725614236" duration="87997000" />
+      <workItem from="1522725614236" duration="88282000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284137000" />
+    <option name="totallyTimeSpent" value="284422000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -9141,8 +9032,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/GoodsAdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="104" column="28" lean-forward="false" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="28" />
+        <state relative-caret-position="1168">
+          <caret line="95" column="23" lean-forward="true" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
           <folding />
         </state>
       </provider>
