@@ -10,26 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f564e48c-bbde-4750-bb2e-84432cdb7848" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/detail/detail.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/detail/detail.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/index/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/detail.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/selected.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/selected.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/views/hello.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/hello.html" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-common-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-core-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-core-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-dao-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-service-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp.war" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/webapp/admin/login.html" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/webapp/admin/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/login.html" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/login.html" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/register.html" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/index.css" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/index.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -80,7 +61,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/detail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="274">
@@ -105,6 +86,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="358">
               <caret line="236" column="0" lean-forward="true" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="206" column="23" lean-forward="false" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -223,13 +214,13 @@
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/login.html" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/city-picker.js" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/city-picker.css" />
-        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/index.css" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/detail.css" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/index.html" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/index/index.js" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/detail/detail.css" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/detail/detail.js" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/detail.html" />
+        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/index.css" />
       </list>
     </option>
   </component>
@@ -833,17 +824,6 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="swiftbuyWeb" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swiftbuy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swiftbuy" type="462c0819:PsiDirectoryNode" />
-              <item name="swiftbuy-webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="swiftbuyWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="swiftbuy" type="b2602c69:ProjectViewProjectNode" />
@@ -9154,12 +9134,12 @@
       <workItem from="1521782777037" duration="31977000" />
       <workItem from="1522403557266" duration="1124000" />
       <workItem from="1522725614236" duration="115148000" />
-      <workItem from="1523694870996" duration="8182000" />
+      <workItem from="1523694870996" duration="8320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319470000" />
+    <option name="totallyTimeSpent" value="319608000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -9172,6 +9152,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.5100143" order="7" side_tool="true" content_ui="tabs" />
@@ -9191,7 +9172,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5" sideWeight="0.4899857" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.4899857" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25995025" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2725322" sideWeight="0.4800995" order="0" side_tool="false" content_ui="combo" />
@@ -9566,14 +9547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="284" column="1" lean-forward="true" selection-start-line="284" selection-start-column="1" selection-end-line="284" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/detail/detail.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
@@ -9626,6 +9599,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="206" column="23" lean-forward="false" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
           <folding />
         </state>
       </provider>
