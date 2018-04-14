@@ -29,117 +29,31 @@
     </div>
     <div class="banner-control" id="js_ban_button_box">
         <a href="javascript:;" class="left">左</a>
-        <a href="javascript:;" class="right">右</a></div>
-    <script type="text/javascript">
-        ;(function () {
+        <a href="javascript:;" class="right">右</a>
+    </div>
 
-            var defaultInd = 0;
-            var list = $('#js_ban_content').children();
-            var count = 0;
-            var change = function (newInd, callback) {
-                if (count) return;
-                count = 2;
-                $(list[defaultInd]).fadeOut(400, function () {
-                    count--;
-                    if (count <= 0) {
-                        if (start.timer) window.clearTimeout(start.timer);
-                        callback && callback();
-                    }
-                });
-                $(list[newInd]).fadeIn(400, function () {
-                    defaultInd = newInd;
-                    count--;
-                    if (count <= 0) {
-                        if (start.timer) window.clearTimeout(start.timer);
-                        callback && callback();
-                    }
-                });
-            }
-
-            var next = function (callback) {
-                var newInd = defaultInd + 1;
-                if (newInd >= list.length) {
-                    newInd = 0;
-                }
-                change(newInd, callback);
-            }
-
-            var start = function () {
-                if (start.timer) window.clearTimeout(start.timer);
-                start.timer = window.setTimeout(function () {
-                    next(function () {
-                        start();
-                    });
-                }, 8000);
-            }
-
-            start();
-
-            $('#js_ban_button_box').on('click', 'a', function () {
-                var btn = $(this);
-                if (btn.hasClass('right')) {
-                    //next
-                    next(function () {
-                        start();
-                    });
-                }
-                else {
-                    //prev
-                    var newInd = defaultInd - 1;
-                    if (newInd < 0) {
-                        newInd = list.length - 1;
-                    }
-                    change(newInd, function () {
-                        start();
-                    });
-                }
-                return false;
-            });
-
-        })();
-
-        function login() {
-
-            $.ajax({
-
-                //几个参数需要注意一下
-                type: "POST",//方法类型
-                dataType: "json",//预期服务器返回的数据类型
-                url: "/admin/login",//url
-                data: $('#user').serialize(),
-                success: function (result) {
-                    console.log(result);//打印服务端返回的数据(调试用)
-                    if (result.resultCode == 200) {
-                        window.location.href="adminSelected.html";
-                    }
-                    ;
-                },
-                error: function () {
-                    alert("异常！");
-                }
-            });
-        }
-    </script>
     <div class="container">
         <div class="register-box">
             <div class="reg-slogan">
                 迅购网 后台管理
             </div>
-            <form id="user">
+            <form id="login" name="login">
                 <div class="reg-form" id="js-form-mobile">
                     <br>
                     <br>
                     <div class="cell">
-                        <label for="js-username_ipt">用户名</label>
-                        <input type="text" name="username" id="js-username_ipt" class="text" maxlength="16"/>
+                        <input type="text" name="name" id="js-username_ipt" class="text" maxlength="16"
+                               placeholder="用户名"/>
                     </div>
                     <div class="cell">
-                        <label for="js-mobile_pwd_ipt">设置密码</label>
-                        <input type="password" name="password" id="js-mobile_pwd_ipt" class="text"/>
+                        <input type="password" name="password" id="js-mobile_pwd_ipt" class="text"
+                               placeholder="密码"/>
                     </div>
                     <div class="bottom">
-                        <a id="js-mobile_btn" href="javascript:;" class="button btn-green" onclick="login()">
-                            登录</a></div>
+                        <a id="js-mobile-btn" href="javascript:;" class="button btn-green">
+                            登录
+                        </a>
+                    </div>
                 </div>
             </form>
         </div>
@@ -155,9 +69,97 @@
     </div>
 </div>
 
-<script>
+<script type="text/javascript">
+    ;(function () {
 
+        var defaultInd = 0;
+        var list = $('#js_ban_content').children();
+        var count = 0;
+        var change = function (newInd, callback) {
+            if (count) return;
+            count = 2;
+            $(list[defaultInd]).fadeOut(400, function () {
+                count--;
+                if (count <= 0) {
+                    if (start.timer) window.clearTimeout(start.timer);
+                    callback && callback();
+                }
+            });
+            $(list[newInd]).fadeIn(400, function () {
+                defaultInd = newInd;
+                count--;
+                if (count <= 0) {
+                    if (start.timer) window.clearTimeout(start.timer);
+                    callback && callback();
+                }
+            });
+        }
 
+        var next = function (callback) {
+            var newInd = defaultInd + 1;
+            if (newInd >= list.length) {
+                newInd = 0;
+            }
+            change(newInd, callback);
+        }
+
+        var start = function () {
+            if (start.timer) window.clearTimeout(start.timer);
+            start.timer = window.setTimeout(function () {
+                next(function () {
+                    start();
+                });
+            }, 8000);
+        }
+
+        start();
+
+        $('#js_ban_button_box').on('click', 'a', function () {
+            var btn = $(this);
+            if (btn.hasClass('right')) {
+                //next
+                next(function () {
+                    start();
+                });
+            }
+            else {
+                //prev
+                var newInd = defaultInd - 1;
+                if (newInd < 0) {
+                    newInd = list.length - 1;
+                }
+                change(newInd, function () {
+                    start();
+                });
+            }
+            return false;
+        });
+
+        function login() {
+            var curName = $('input[name=name]').val();
+            $.ajax({
+                type: "POST",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "http://192.168.0.18:8081/admin/login",//url
+                data: $('#login').serialize(),
+                success: function (result) {
+                    console.log(result);//打印服务端返回的数据(调试用)
+                    if (result.resultCode == 200) {
+                        window.location.href = "adminSelected.html?username=" + curName;
+                    }
+                },
+                error: function () {
+                    alert("异常！");
+                }
+            });
+        }
+
+        $('#js-mobile-btn').on('click', function (e) {
+            e.preventDefault();
+            login();
+        });
+
+    })();
 </script>
 
 </body>
