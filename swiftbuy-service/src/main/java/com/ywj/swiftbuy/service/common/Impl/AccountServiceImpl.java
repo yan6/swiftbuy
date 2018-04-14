@@ -3,6 +3,7 @@ package com.ywj.swiftbuy.service.common.Impl;
 import com.ywj.swiftbuy.admin.UserType;
 import com.ywj.swiftbuy.dao.model.tables.records.UserRecord;
 import com.ywj.swiftbuy.service.common.AccountService;
+import com.ywj.swiftbuy.service.common.AddressIpService;
 import com.ywj.swiftbuy.service.common.BusinessService;
 import com.ywj.swiftbuy.service.common.CommonService;
 import com.ywj.swiftbuy.service.utils.Md5Utils;
@@ -16,7 +17,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 public class AccountServiceImpl extends CommonService implements AccountService {
@@ -27,6 +30,9 @@ public class AccountServiceImpl extends CommonService implements AccountService 
 
     @Autowired
     private BusinessService businessService;
+
+    @Autowired
+    private AddressIpService addressIpService;
 
     @Override
     public boolean login(String username, String password) {
@@ -104,7 +110,27 @@ public class AccountServiceImpl extends CommonService implements AccountService 
         List<User> list = select(TABLE, TABLE.USERNAME.eq(query), User.class);
         if (CollectionUtils.isEmpty(list))
             return new ArrayList<>();
-        list.stream().filter(x -> StringUtils.equalsIgnoreCase(x.getUserType(), UserType.NORMAL_USER.getValue()));
+        fillAddress(list);
         return list;
+    }
+
+    @Override
+    public List<User> getUserListByRegisterDate(Date minDate, Date maxDate) {
+        List<User> list = select(TABLE,
+                TABLE.REGISTDATE.le(new Timestamp(maxDate.getTime())).and(TABLE.REGISTDATE.ge(new Timestamp(minDate.getTime()))),
+                User.class);
+        if (CollectionUtils.isEmpty(list))
+            return new ArrayList<>();
+        fillAddress(list);
+        return list;
+    }
+
+    private void fillAddress(List<User> list) {
+        list = list.stream()
+                .filter(x -> StringUtils.equalsIgnoreCase(x.getUserType(), UserType.NORMAL_USER.getValue()))
+                .collect(Collectors.toList());
+        for (User user : list) {
+            user.setAddress(addressIpService.getAddressStr(user.getAddressId()));
+        }
     }
 }

@@ -37,28 +37,44 @@ public class AddressIpServiceImpl extends CommonService implements AddressIpServ
     private static final com.ywj.swiftbuy.dao.model.tables.Address TABLE = com.ywj.swiftbuy.dao.model.tables.Address.ADDRESS;
 
     @Override
-    public boolean insert(String city, String county) {
+    public boolean insert(String city, String county, String province) {
         Map<Field<?>, Object> toUpdate = new HashMap<>();
         toUpdate.put(TABLE.CITY, city);
         toUpdate.put(TABLE.COUNTY, county);
         toUpdate.put(TABLE.UPDATE_TIME, new Date());
-        return insert(TABLE,toUpdate);
+        toUpdate.put(TABLE.PROVINCE, province);
+        return insert(TABLE, toUpdate);
     }
 
     @Override
     public boolean update(Address address) {
         AddressRecord record = objectToRecord(address, AddressRecord.class);
-        return insert(TABLE,record);
+        return update(TABLE, record, TABLE.ID.eq(address.getId()));
     }
 
     @Override
-    public boolean exist(String city,String county) {
+    public boolean exist(String city, String county) {
         return exists(TABLE, TABLE.CITY.eq(city).and(TABLE.COUNTY.eq(county)));
     }
 
     @Override
-    public int getId(String city,String county){
-        return selectOneValue(TABLE,TABLE.ID,TABLE.CITY.eq(city).and(TABLE.COUNTY.eq(county)));
+    public int getId(String city, String county) {
+        return selectOneValue(TABLE, TABLE.ID, TABLE.CITY.eq(city).and(TABLE.COUNTY.eq(county)));
+    }
+
+    /**
+     * 获取字符串类型的地址 "省-市-县"
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public String getAddressStr(int id) {
+        Address address = selectOneRecord(TABLE, TABLE.ID.eq(id), Address.class);
+        if (address == null)
+            return "";
+        String strAddress = address.getProvince() + "-" + address.getCity() + "-" + address.getCounty();
+        return strAddress;
     }
 
 

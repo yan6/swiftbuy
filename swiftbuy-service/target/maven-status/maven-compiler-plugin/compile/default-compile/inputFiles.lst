@@ -5,7 +5,9 @@
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/AddressIpService.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/GoodsService.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/ShoppingCartServiceImpl.java
+/Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/admin/AdminLoginService.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/utils/RecordMapperUtils.java
+/Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/admin/Impl/AdminLoginServiceImpl.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/AccountService.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/PopularGoodsServiceImpl.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/SearchService.java

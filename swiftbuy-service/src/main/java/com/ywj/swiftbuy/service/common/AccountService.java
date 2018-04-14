@@ -2,6 +2,7 @@ package com.ywj.swiftbuy.service.common;
 
 import com.ywj.swiftbuy.web.User;
 
+import java.util.Date;
 import java.util.List;
 
 public interface AccountService {
@@ -25,4 +26,6 @@ public interface AccountService {
     boolean forgetPassword(int uid, String newPassword, String userType);
 
     List<User> getListByQuery(String query);
+
+    List<User> getUserListByRegisterDate(Date minDate, Date maxDate);
 }

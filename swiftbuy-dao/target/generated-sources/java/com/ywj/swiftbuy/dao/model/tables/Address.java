@@ -11,7 +11,7 @@ package com.ywj.swiftbuy.dao.model.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Address extends org.jooq.impl.TableImpl<com.ywj.swiftbuy.dao.model.tables.records.AddressRecord> {
 
-	private static final long serialVersionUID = -479871882;
+	private static final long serialVersionUID = 948444049;
 
 	/**
 	 * The singleton instance of <code>swiftbuy.address</code>
@@ -45,6 +45,11 @@ public class Address extends org.jooq.impl.TableImpl<com.ywj.swiftbuy.dao.model.
 	 * The column <code>swiftbuy.address.update_time</code>.
 	 */
 	public final org.jooq.TableField<com.ywj.swiftbuy.dao.model.tables.records.AddressRecord, java.sql.Timestamp> UPDATE_TIME = createField("update_time", org.jooq.impl.SQLDataType.TIMESTAMP, this, "");
+
+	/**
+	 * The column <code>swiftbuy.address.province</code>.
+	 */
+	public final org.jooq.TableField<com.ywj.swiftbuy.dao.model.tables.records.AddressRecord, java.lang.String> PROVINCE = createField("province", org.jooq.impl.SQLDataType.VARCHAR.length(255), this, "");
 
 	/**
 	 * Create a <code>swiftbuy.address</code> table reference

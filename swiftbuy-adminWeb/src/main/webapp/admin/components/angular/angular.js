@@ -1804,7 +1804,7 @@ function setupModuleLoader(window) {
            * See {@link ngAnimate.$animateProvider#register $animateProvider.register()} and
            * {@link ngAnimate ngAnimate module} for more information.
            */
-          animation: invokeLater('$animateProvider', 'register'),
+          animation: invokeLater('$animateProvider', 'login'),
 
           /**
            * @ngdoc method
@@ -1815,7 +1815,7 @@ function setupModuleLoader(window) {
            * @description
            * See {@link ng.$filterProvider#register $filterProvider.register()}.
            */
-          filter: invokeLater('$filterProvider', 'register'),
+          filter: invokeLater('$filterProvider', 'login'),
 
           /**
            * @ngdoc method
@@ -1827,7 +1827,7 @@ function setupModuleLoader(window) {
            * @description
            * See {@link ng.$controllerProvider#register $controllerProvider.register()}.
            */
-          controller: invokeLater('$controllerProvider', 'register'),
+          controller: invokeLater('$controllerProvider', 'login'),
 
           /**
            * @ngdoc method

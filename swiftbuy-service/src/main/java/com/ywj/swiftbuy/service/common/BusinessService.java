@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface BusinessService {
 
-    List<Integer> getIdList(String city, String county);
+    List<Integer> getIdListByP(String province);
 
     boolean insert(BusinessBean business);
 
@@ -17,4 +17,14 @@ public interface BusinessService {
     void updateUid(int uid,int id);
 
     void updatePassword(int uid, String password);
+
+    List<Integer> getIdListByPC(String province, String city);
+
+    List<Integer> getIdListByPCC(String province, String city, String county);
+
+    List<BusinessBean> getAllBusiness();
+
+    List<BusinessBean> getBusinessListByAddress(String query);
+
+    List<BusinessBean> getBusinessListByName(String query);
 }

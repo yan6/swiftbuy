@@ -1,12 +1,15 @@
 com/ywj/swiftbuy/dao/model/tables/Address.class
 com/ywj/swiftbuy/dao/model/Keys$UniqueKeys0.class
+com/ywj/swiftbuy/dao/model/tables/records/SelectedGoodsRecord.class
 com/ywj/swiftbuy/dao/model/tables/records/BusinessRecord.class
 com/ywj/swiftbuy/dao/model/tables/records/CategoryRecord.class
 com/ywj/swiftbuy/dao/model/tables/records/BuyRecord.class
 com/ywj/swiftbuy/dao/model/tables/records/GoodsRecord.class
 com/ywj/swiftbuy/dao/model/tables/PopularGoods.class
 com/ywj/swiftbuy/dao/model/tables/records/AddressRecord.class
+com/ywj/swiftbuy/dao/model/tables/AdminAccount.class
 com/ywj/swiftbuy/dao/model/tables/Reply.class
+com/ywj/swiftbuy/dao/model/tables/SelectedGoods.class
 com/ywj/swiftbuy/dao/model/Swiftbuy.class
 com/ywj/swiftbuy/dao/model/tables/records/UserRecord.class
 com/ywj/swiftbuy/dao/model/tables/records/ShoppingCartRecord.class
@@ -18,6 +21,7 @@ com/ywj/swiftbuy/dao/model/tables/Category.class
 com/ywj/swiftbuy/dao/model/tables/records/ReplyRecord.class
 com/ywj/swiftbuy/dao/model/tables/User.class
 com/ywj/swiftbuy/dao/model/tables/Buy.class
+com/ywj/swiftbuy/dao/model/tables/records/AdminAccountRecord.class
 com/ywj/swiftbuy/dao/model/Keys$Identities0.class
 com/ywj/swiftbuy/dao/model/Keys.class
 com/ywj/swiftbuy/dao/model/Tables.class

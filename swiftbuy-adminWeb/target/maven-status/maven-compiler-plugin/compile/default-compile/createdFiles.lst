@@ -3,4 +3,5 @@ com/ywj/swiftbuy/admin/controller/AddressAdminController.class
 com/ywj/swiftbuy/admin/controller/GoodsAdminController.class
 com/ywj/swiftbuy/admin/controller/ToolController.class
 com/ywj/swiftbuy/admin/controller/BusinessAccountController.class
+com/ywj/swiftbuy/admin/controller/LoginController.class
 com/ywj/swiftbuy/admin/controller/UserController.class

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>迅购网后台管理系统</title>
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+</head>
+<body>
+
+<p id="username">欢迎您 <span class="j-user-name"></span></p>
+
+<script>
+    var searchData = window.location.search.split('=')[1];
+
+    $('.j-user-name').html(searchData);
+</script>
+</body>
+</html>

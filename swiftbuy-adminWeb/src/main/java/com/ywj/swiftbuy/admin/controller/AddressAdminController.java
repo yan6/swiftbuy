@@ -18,31 +18,33 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping(value = "/admin")
+@RequestMapping(value = "/admin/address")
 public class AddressAdminController {
     private static final Logger LOG = LoggerFactory.getLogger(AddressAdminController.class);
 
     @Autowired
     private AddressIpService addressIpService;
 
-    @RequestMapping(value = "/address/insert", method = RequestMethod.GET)
+    @RequestMapping(value = "/insert", method = RequestMethod.GET)
     @ResponseBody
     @JsonView(JacksonViews.Admin.class)
     public APIResponse insert(@RequestParam(value = "city", required = true) String city,
-                              @RequestParam(value = "county", required = true) String county) {
+                              @RequestParam(value = "county", required = true) String county,
+                              @RequestParam(value = "province", required = true) String province) {
 
-        if (addressIpService.exist(city,county))
+        if (addressIpService.exist(city, county))
             return new FailureAPIResponse("城市已存在");
-        addressIpService.insert(city, county);
+        addressIpService.insert(city, county, province);
         return new SuccessAPIResponse();
     }
 
-    @RequestMapping(value = "/address/update", method = RequestMethod.GET)
+    @RequestMapping(value = "/update", method = RequestMethod.GET)
     @ResponseBody
     @JsonView(JacksonViews.Admin.class)
     public APIResponse update(@RequestParam(value = "city", required = true) String city,
-                              @RequestParam(value = "county", required = true) String county) {
-        if (addressIpService.update(new Address(city, county)))
+                              @RequestParam(value = "county", required = true) String county,
+                              @RequestParam(value = "province", required = true) String province) {
+        if (addressIpService.update(new Address(city, county, province)))
             return new SuccessAPIResponse();
         return new FailureAPIResponse();
     }

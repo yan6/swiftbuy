@@ -19,9 +19,12 @@ public class CategoryServiceImpl extends CommonService implements CategoryServic
 
     @Override
     public int getIdByName(String categoryName) {
-        return selectOneValue(TABLE,
+        Integer id = selectOneValue(TABLE,
                 TABLE.ID,
                 TABLE.NAME.eq(categoryName));
+        if (id == null)
+            return -1;
+        return id;
     }
 
     @Override
@@ -37,7 +40,7 @@ public class CategoryServiceImpl extends CommonService implements CategoryServic
 
     @Override
     public boolean update(CategoryBean categoryBean) {
-        if (!exist(categoryBean.getName())&& StringUtils.isNotEmpty(categoryBean.getName())&&StringUtils.isNotEmpty(categoryBean.getDescription())) {
+        if (!exist(categoryBean.getName()) && StringUtils.isNotEmpty(categoryBean.getName()) && StringUtils.isNotEmpty(categoryBean.getDescription())) {
             return insert(categoryBean);
         } else {
             CategoryRecord record = objectToRecord(categoryBean, CategoryRecord.class);

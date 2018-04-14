@@ -43,6 +43,7 @@ public class User implements Serializable {
     private Date releaseDate;
     private Date updateDate;
     private int addressId;
+    private String address;  //省-市-县
 
 
     public User(String username, String password, String phone) {

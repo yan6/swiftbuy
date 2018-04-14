@@ -9,6 +9,7 @@
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/constant/RequestParameter.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/CommonResponse.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/BuyBean.java
+/Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/UserListItem.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/JacksonViews.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/utils/DateUtils.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/SuccessAPIResponse.java

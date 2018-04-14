@@ -466,7 +466,7 @@ swiftbuy.config(['$routeProvider', "$httpProvider", function ($routeProvider, $h
         redirectTo: '/editTab'
     });
     $routeProvider.when('/register', {
-        templateUrl: 'views/register.html',
+        templateUrl: 'views/login.html',
         controller: 'registerCtrl'
     });
 }]);

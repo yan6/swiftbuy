@@ -4,6 +4,7 @@ import com.ywj.swiftbuy.bean.GoodsBean;
 import com.ywj.swiftbuy.bean.SortStrategy;
 import com.ywj.swiftbuy.bean.Status;
 import com.ywj.swiftbuy.dao.model.tables.Goods;
+import com.ywj.swiftbuy.dao.model.tables.SelectedGoods;
 import com.ywj.swiftbuy.dao.model.tables.records.GoodsRecord;
 import com.ywj.swiftbuy.service.common.CommonService;
 import com.ywj.swiftbuy.service.common.GoodsService;
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 /**
@@ -26,6 +28,8 @@ public class GoodsServiceImpl extends CommonService implements GoodsService {
     private static final Logger LOG = LoggerFactory.getLogger(GoodsServiceImpl.class);
 
     private static final Goods TABLE = Goods.GOODS;
+
+    private static final SelectedGoods SELECTED_GOODS = SelectedGoods.SELECTED_GOODS; //首页默认显示第一个商品列表，有后台控制
 
     @Override
     public GoodsBean getGoodsById(int id) {
@@ -123,7 +127,7 @@ public class GoodsServiceImpl extends CommonService implements GoodsService {
     @Override
     public boolean updateRemainCount(int id, int count) {
         int remainCount = getRemainCount(id) + count;
-        return updateField(TABLE,TABLE.REMAIN_COUNT,remainCount,TABLE.ID.eq(id));
+        return updateField(TABLE, TABLE.REMAIN_COUNT, remainCount, TABLE.ID.eq(id));
     }
 
     //获取某件商品的库存
@@ -134,5 +138,19 @@ public class GoodsServiceImpl extends CommonService implements GoodsService {
             return 0;
         else
             return remainCount;
+    }
+
+    //首页默认第一商品列表
+    @Override
+    public List<GoodsBean> getDefaultShowList(int num) {
+        List<Integer> idList = select(SELECTED_GOODS,
+                SELECTED_GOODS.GOODS_ID,
+                SELECTED_GOODS.STATUS.eq(Status.online.getValue()),
+                SELECTED_GOODS.CREATE_TIME.desc(),
+                num,
+                0);
+        if (CollectionUtils.isEmpty(idList))
+            return new ArrayList<>();
+        return getGoodsBeanList(idList);
     }
 }
