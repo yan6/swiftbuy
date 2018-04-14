@@ -1,0 +1,250 @@
+body {
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+p, h1, h2, h3, h4, h5, h6, form, ul, ol, li, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.shop-detail {
+    width: 100%;
+    height: auto;
+    background: #f5f5f5;
+}
+.detail-top {
+    width: 100%;
+}
+.index-top-user {
+    width: 1190px;
+    height: 36px;
+    margin: 0 auto;
+}
+.user-address {
+    float: left;
+    line-height: 36px;
+}
+.user-detail{
+    float: right;
+    line-height: 36px;
+}
+.detail-link {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+}
+.line:after {
+    display: inline-block;
+    height: 16px;
+    content: '';
+    border-right: 1px solid #666;
+    position: absolute;
+    right: -2px;
+    top: 10px;
+}
+.index-top-search {
+    width: 100%;
+    background: #fff;
+}
+.search-content {
+    width: 1190px;
+    padding: 25px 0;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.search-icon {
+    display: block;
+    width: 142px;
+    height: 58px;
+    margin: 0 22px;
+    float: left;
+}
+.search-detail {
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+    position: relative;
+}
+.search-detail-input {
+    display: inline-block;
+    width: 500px;
+    height: 36px;
+    border: 2px solid #ff5000;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: none;
+    padding: 0 20px;
+    outline: 0;
+    overflow: hidden;
+}
+.search-detail-btn {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 40px;
+    background: #ff4200;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    width: 74px;
+    height: 40px;
+    overflow: hidden;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    right: -74px;
+    top: 0;
+    z-index: 100;
+}
+
+
+.detail-crumb {
+    width: 100%;
+    height: 52px;
+}
+.detail-crumb-detail {
+    width: 1190px;
+    font-size: 12px;
+    color: #6b6b6b;
+    line-height: 52px;
+    background: #f5f5f5;
+    margin: 0 auto;
+}
+.detail-content {
+    width: 1190px;
+    min-height: 1000px;
+    margin: 0 auto;
+    background: #fff;
+}
+.detail-content-info {
+    padding: 15px;
+    overflow: hidden;
+}
+.info-img {
+    width: 600px;
+    height: 400px;
+    display: block;
+    float: left;
+}
+.info-main {
+    width: 540px;
+    padding-left: 20px;
+    float: right;
+}
+.info-main .name {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.info-main .description {
+    height: 300px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #666;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.info-main .price-num {
+    width: 100%;
+    margin-top: 15px;
+}
+.info-main .price-num .price,
+.info-main .price-num .num {
+    font-size: 16px;
+    line-height: 26px;
+    color: #666;
+}
+.info-main .price-num .price {
+    float: left;
+}
+.info-main .price-num .num {
+    float: right;
+}
+
+.detail-content-head {
+    font-size: 24px;
+    color: #333;
+    line-height: 36px;
+    padding: 10px 15px;
+}
+.detail-content-business {
+    padding: 15px;
+}
+.business-img {
+    display: block;
+    width: 98px;
+    height: 98px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    float: left;
+}
+.business-detail {
+    width: 1040px;
+    height: 100px;
+    margin-left: 20px;
+    float: left;
+}
+.business-detail .name {
+    font-size: 18px;
+    color: #333;
+    line-height: 30px;
+}
+.business-detail .description {
+    height: 48px;
+    font-size: 16px;
+    color: #666;
+    line-height: 24px;
+    overflow: hidden;
+}
+.business-detail .address {
+    font-size: 16px;
+    color: #666;
+    line-height: 22px;
+}
+
+.detail-content-reply {
+    padding: 15px;
+}
+.reply-ul {
+    width: 100%;
+    overflow: hidden;
+}
+.reply-list {
+    width: 100%;
+    height: 49px;
+    border-bottom: 1px solid #999;
+}
+.reply-list-info,
+.reply-list-date {
+    color: #333;
+    line-height: 24px;
+}
+.reply-list-info {
+    font-size: 18px;
+}
+.reply-list-date {
+    font-size: 12px;
+    text-align: right;
+}
+
+
+/* ===== 清除浮动 ===== */
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.clearfix:after {
+    clear: both;
+}

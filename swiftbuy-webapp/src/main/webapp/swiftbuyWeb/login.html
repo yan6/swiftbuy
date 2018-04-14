@@ -2,167 +2,163 @@
 <html>
 
 <head>
-  <title>迅购网</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link href="css/home.css?v=2" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <title>迅购网</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/home.css?v=2" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
 </head>
 
 <body>
 
-  <div class="wrap">
+<div class="wrap">
     <div class="banner-show" id="js_ban_content">
-      <div class="cell bns-01">
-        <div class="con">
+        <div class="cell bns-01">
+            <div class="con">
+            </div>
         </div>
-      </div>
-      <div class="cell bns-02" style="display:none;">
-        <div class="con">
-          <a href="http://www.xwcms.net" target="_blank" class="banner-link">
+        <div class="cell bns-02" style="display:none;">
+            <div class="con">
+                <a href="http://www.xwcms.net" target="_blank" class="banner-link">
                     <i>圈子</i></a></div>
-      </div>
-      <div class="cell bns-03" style="display:none;">
-        <div class="con">
-          <a href="http://www.xwcms.net" target="_blank" class="banner-link">
+        </div>
+        <div class="cell bns-03" style="display:none;">
+            <div class="con">
+                <a href="http://www.xwcms.net" target="_blank" class="banner-link">
                     <i>企业云</i></a></div>
-      </div>
+        </div>
     </div>
     <div class="banner-control" id="js_ban_button_box">
-      <a href="javascript:;" class="left">左</a>
-      <a href="javascript:;" class="right">右</a></div>
-    <script type="text/javascript">
-      ;
-      (function() {
+        <a href="javascript:;" class="left">左</a>
+        <a href="javascript:;" class="right">右</a></div>
+    <div class="container">
+        <div class="register-box">
+            <div class="reg-slogan">
+                迅购网 用户登录
+            </div>
+            <form id="login" name="login">
+                <div class="reg-form" id="js-form-mobile">
+                    <br>
+                    <br>
+                    <div class="cell">
+                        <input type="text" name="username" id="js-username_ipt" class="text" maxlength="16"
+                               placeholder="用户名"/>
+                    </div>
+                    <div class="cell">
+                        <input type="password" name="password" id="js-mobile_pwd_ipt" class="text" placeholder="密码"/>
+                    </div>
+                    <div class="bottom">
+                        <a id="js-mobile-btn" href="javascript:;" name="button" class="button btn-green">
+                            立即登录
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="con">
+        <div class="copy-right">
+            <div class="cell">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    ;
+    (function () {
 
         var defaultInd = 0;
         var list = $('#js_ban_content').children();
         var count = 0;
-        var change = function(newInd, callback) {
-          if (count) return;
-          count = 2;
-          $(list[defaultInd]).fadeOut(400, function() {
-            count--;
-            if (count <= 0) {
-              if (start.timer) window.clearTimeout(start.timer);
-              callback && callback();
-            }
-          });
-          $(list[newInd]).fadeIn(400, function() {
-            defaultInd = newInd;
-            count--;
-            if (count <= 0) {
-              if (start.timer) window.clearTimeout(start.timer);
-              callback && callback();
-            }
-          });
-        }
-
-        var next = function(callback) {
-          var newInd = defaultInd + 1;
-          if (newInd >= list.length) {
-            newInd = 0;
-          }
-          change(newInd, callback);
-        }
-
-        var start = function() {
-          if (start.timer) window.clearTimeout(start.timer);
-          start.timer = window.setTimeout(function() {
-            next(function() {
-              start();
+        var change = function (newInd, callback) {
+            if (count) return;
+            count = 2;
+            $(list[defaultInd]).fadeOut(400, function () {
+                count--;
+                if (count <= 0) {
+                    if (start.timer) window.clearTimeout(start.timer);
+                    callback && callback();
+                }
             });
-          }, 8000);
+            $(list[newInd]).fadeIn(400, function () {
+                defaultInd = newInd;
+                count--;
+                if (count <= 0) {
+                    if (start.timer) window.clearTimeout(start.timer);
+                    callback && callback();
+                }
+            });
+        }
+
+        var next = function (callback) {
+            var newInd = defaultInd + 1;
+            if (newInd >= list.length) {
+                newInd = 0;
+            }
+            change(newInd, callback);
+        }
+
+        var start = function () {
+            if (start.timer) window.clearTimeout(start.timer);
+            start.timer = window.setTimeout(function () {
+                next(function () {
+                    start();
+                });
+            }, 8000);
         }
 
         start();
 
-        $('#js_ban_button_box').on('click', 'a', function() {
-          var btn = $(this);
-          if (btn.hasClass('right')) {
-            //next
-            next(function() {
-              start();
-            });
-          } else {
-            //prev
-            var newInd = defaultInd - 1;
-            if (newInd < 0) {
-              newInd = list.length - 1;
+        $('#js_ban_button_box').on('click', 'a', function () {
+            var btn = $(this);
+            if (btn.hasClass('right')) {
+                //next
+                next(function () {
+                    start();
+                });
+            } else {
+                //prev
+                var newInd = defaultInd - 1;
+                if (newInd < 0) {
+                    newInd = list.length - 1;
+                }
+                change(newInd, function () {
+                    start();
+                });
             }
-            change(newInd, function() {
-              start();
-            });
-          }
-          return false;
+            return false;
         });
 
-      })();
-
-      function okp() {
-        var button = document.getElementsByName("button");
-        if (document.login.username.valueOf() != "" && document.login.password.valueOf() != "") {
-          button.disabled(false);
-        } else {
-          button.disabled(true);
+        function login() {
+            $.ajax({
+                type: "POST", //方法类型
+                dataType: "json", //预期服务器返回的数据类型
+                url: "http://localhost:8080/api/account/login", //url
+                data: $('#login').serialize(),
+                success: function (result) {
+                    if (result != null) {
+                        window.location.href = "/swiftbuy/views/index.html?username=" + result.username;
+                    } else {
+                        alert(" 用户名或密码错误！")
+                    }
+                    ;
+                },
+                error: function () {
+                    alert(" 登录失败！");
+                }
+            });
         }
 
-      }
+        $('#js-mobile-btn').on('click', function (e) {
+            e.preventDefault();
+            login();
+        })
 
-      function register() {
-
-        $.ajax({
-
-          //几个参数需要注意一下
-          type: "POST", //方法类型
-          dataType: "json", //预期服务器返回的数据类型
-          url: "api/account/login", //url
-          data: $('#login').serialize(),
-          success: function(result) {
-            if (result != null) {
-              window.location.href = "/api/selected?username=" + result.username;
-            } else {
-              alert(" 用户名或密码错误！")
-            };
-          },
-          error: function() {
-            alert(" 未知错误！");
-          }
-        });
-      }
-    </script>
-    <div class="container">
-      <div class="register-box">
-        <div class="reg-slogan">
-          迅购网 用户登录
-        </div>
-        <form id="login" name="login">
-          <div class="reg-form" id="js-form-mobile">
-            <br>
-            <br>
-            <div class="cell">
-              <input type="text" name="username" id="js-username_ipt" class="text" maxlength="16" placeholder="用户名" onkeyup="okp()" />
-            </div>
-            <div class="cell">
-              <input type="password" name="password" id="js-mobile_pwd_ipt" class="text" onkeyup="okp()" placeholder="密码" />
-            </div>
-            <div class="bottom">
-              <a id="js-mobile_btn" href="javascript:;" name="button" class="button btn-green" onclick="register()">
-                            立即登录</a></div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="con">
-      <div class="copy-right">
-        <div class="cell">
-
-        </div>
-      </div>
-    </div>
-  </div>
-
+    })();
+</script>
 </body>
 
 </html>

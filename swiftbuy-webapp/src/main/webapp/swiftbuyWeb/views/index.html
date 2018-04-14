@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="网上购物网站"/>
+    <meta name="description" content="迅购网首页"/>
+    <title>迅购网-首页</title>
+    <link rel="stylesheet" href="../css/index/index.css">
+    <link rel="stylesheet" href="../css/index/city-picker.css">
+</head>
+<body>
+    <div class="buy-index">
+        <div class="index-top">
+            <div class="index-top-user clearfix">
+                <p class="user-address">北京</p>
+                <p class="user-detail">
+                    <span class="detail-link line">用户</span>
+                    <span class="detail-link line">个人主页</span>
+                    <span class="detail-link">购物车</span>
+                </p>
+            </div>
+            <div class="index-top-search">
+                <div class="search-content clearfix">
+                    <img class="search-icon" src="https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png" alt="">
+                    <p class="search-detail clearfix">
+                        <input class="search-detail-input" type="text" placeholder="请输入搜索内容">
+                        <a class="search-detail-btn" href="javascript:;">搜索</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="index-main">
+            <div class="index-main-slider">
+                <div id="index-slider" class="slider-content">
+                    <div data-u="slides" class="slider-list">
+                        <div><img data-u="image" src="../images/index/slider/001.jpg" /></div>
+                        <div><img data-u="image" src="../images/index/slider/002.jpg" /></div>
+                        <div><img data-u="image" src="../images/index/slider/003.jpg" /></div>
+                        <div><img data-u="image" src="../images/index/slider/004.jpg" /></div>
+                        <div><img data-u="image" src="../images/index/slider/005.jpg" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="index-address clearfix">
+                <div class="index-address-main clearfix">
+                    <span class="address-info">类型选择：</span>
+                    <ul class="style-detail">
+                        <li class="style-detail-list" data-id="1">服装</li>
+                        <li class="style-detail-list" data-id="2">电子产品</li>
+                        <li class="style-detail-list" data-id="3">书籍</li>
+                        <li class="style-detail-list" data-id="4">食品</li>
+                    </ul>
+                </div>
+                <div class="index-address-main main-address clearfix">
+                    <span class="address-info">地区选择：</span>
+                    <div class="address-detail" style="position: relative;"><!-- container -->
+                        <input id="city-picker1" name="address" readonly type="text">
+                    </div>
+                </div>
+                <div class="index-address-main main-search clearfix">
+                    <a class="address-search-btn" href="javascript:;">搜索</a>
+                </div>
+            </div>
+            <div class="index-shop">
+                <div class="shop-content">
+                    <h3 class="shop-content-title">精选商品</h3>
+                    <ul class="shop-content-ul j-shop-content-list0"></ul>
+                </div>
+                <div class="shop-content">
+                    <h3 class="shop-content-title">推荐商品</h3>
+                    <ul class="shop-content-ul j-shop-content-list1"></ul>
+                </div>
+                <div class="shop-content">
+                    <h3 class="shop-content-title">热门商品</h3>
+                    <ul class="shop-content-ul j-shop-content-list2"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="index-footer">
+            <ul class="index-footer-ul">
+                <li class="index-footer-item">关于我们</li>
+                <li class="index-footer-item">联系方式</li>
+                <li class="index-footer-item">招聘信息</li>
+            </ul>
+            <p class="index-footer-info">
+                互联网违法和不良信息举报电话：023-88390110 邮箱：110@zbj.com 信用重庆 国家企业信用信息公示系统(重庆)
+            </p>
+        </div>
+    </div>
+
+    <script src="../js/jquery-1.7.2.js"></script>
+    <script src="../js/jssor.slider-27.1.0.min.js"></script>
+    <script src="../js/city-picker.data.js"></script>
+    <script src="../js/city-picker.js"></script>
+    <script src="../js/index/index.js"></script>
+</body>
+</html>
