@@ -138,6 +138,14 @@ public class BusinessServiceImpl extends CommonService implements BusinessServic
                 BusinessBean.class);
     }
 
+    @Override
+    public List<Integer> getIdList(String name) {
+        name = "%" + name + "%";
+        return select(TABLE,
+                TABLE.ID,
+                TABLE.NAME.like(name));
+    }
+
     private User setUser(BusinessBean business) {
         User user = new User();
         user.setUsername(business.getName());

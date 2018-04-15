@@ -1,7 +1,6 @@
 package com.ywj.swiftbuy.admin.controller;
 
 import com.fasterxml.jackson.annotation.JsonView;
-import com.ywj.swiftbuy.admin.BusinessBean;
 import com.ywj.swiftbuy.bean.GoodsBean;
 import com.ywj.swiftbuy.model.*;
 import com.ywj.swiftbuy.service.common.GoodsService;
@@ -28,6 +27,7 @@ public class GoodsAdminController {
 
     /**
      * 新增商品
+     *
      * @param goods
      * @return
      */
@@ -64,6 +64,7 @@ public class GoodsAdminController {
 
     /**
      * 修改商品信息
+     *
      * @param goods
      * @return
      */
@@ -79,11 +80,11 @@ public class GoodsAdminController {
     }
 
     /**
-     *  检索商品
-     *  1.商品名称
-     *  2.商家名称
-     *  3.商品类型
-     *  4.在线状态
+     * 检索商品
+     * 1.商品名称
+     * 2.商家名称
+     * 3.商品类型
+     * 4.在线状态
      */
     @RequestMapping(value = "/query", method = RequestMethod.GET)
     @ResponseBody
@@ -91,15 +92,18 @@ public class GoodsAdminController {
     public RecentGoods get(@RequestParam(value = "start", required = false, defaultValue = "0") int start,
                            @RequestParam(value = "num", required = false, defaultValue = "10") int num,
                            @RequestParam(value = "query", required = true) String query,
-                           @RequestParam(value = "type", required = true) UserQueryType type){
+                           @RequestParam(value = "type", required = true) UserQueryType type) {
         List<GoodsBean> goodsBeans = new ArrayList<>();
         switch (type) {
             case BUSINESS_NAME:
                 //商家名称
+                goodsBeans = goodsService.getGoodsListByBusinessName(query, num);
                 break;
             case ADDRESS:
+                //TODO
                 break;
             case GOODS_NAME:
+                //TODO
                 break;
             default:
                 return null;

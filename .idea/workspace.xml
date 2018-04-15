@@ -10,7 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f564e48c-bbde-4750-bb2e-84432cdb7848" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/SelectedController.java" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/SelectedController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/GoodsAdminController.java" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/GoodsAdminController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/ShoppingCartBean.java" afterPath="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/ShoppingCartBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/BuyBean.java" afterPath="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/BuyBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/BusinessService.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/BusinessService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/GoodsService.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/GoodsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/BusinessServiceImpl.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/BusinessServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/GoodsServiceImpl.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/GoodsServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/PopularGoodsServiceImpl.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/PopularGoodsServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/ReplyServiceImpl.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/ReplyServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/ReplyService.java" afterPath="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/ReplyService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/BuyController.java" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/BuyController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/GoodsDetailController.java" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/GoodsDetailController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/SearchController.java" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/SearchController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/ShoppingCartController.java" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/ShoppingCartController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/index.html" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,31 +45,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SelectedController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/SelectedController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="150" column="5" lean-forward="true" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HistoryServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/HistoryServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="678">
-              <caret line="71" column="38" lean-forward="false" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BusinessAccountController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/BusinessAccountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="21">
+              <caret line="82" column="61" lean-forward="false" selection-start-line="82" selection-start-column="61" selection-end-line="82" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodsAdminController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/GoodsAdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodsServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/GoodsServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="73" column="13" lean-forward="false" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodsService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/GoodsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="31" column="69" lean-forward="false" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -64,74 +90,20 @@
       <file leaf-file-name="BusinessServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/BusinessServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            <state relative-caret-position="252">
+              <caret line="141" column="25" lean-forward="false" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2583#2584#0" expanded="true" />
-                <element signature="e#2650#2651#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JooqService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/JooqService.java">
+      <file leaf-file-name="BusinessService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/BusinessService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="351" column="0" lean-forward="false" selection-start-line="351" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/detail/detail.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="89" column="17" lean-forward="false" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="68" column="42" lean-forward="true" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/detail/detail.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="236" column="0" lean-forward="true" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="218" column="16" lean-forward="true" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="16" />
+            <state relative-caret-position="588">
+              <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -156,7 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>scale</find>
       <find>org.jsoup.version</find>
       <find>seohyplzt_pc_chengshi</find>
       <find>clickLog</find>
@@ -186,6 +157,7 @@
       <find>.shop-content-item</find>
       <find>console</find>
       <find>.item-img</find>
+      <find>ShoppingCartBean</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -206,22 +178,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/HistoryBean.java" />
-        <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/BuyService.java" />
-        <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/BuyServiceImpl.java" />
-        <option value="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/BuyBean.java" />
         <option value="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/ShoppingCartStatus.java" />
         <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/ShoppingCartService.java" />
-        <option value="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/ShoppingCartBean.java" />
         <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/ShoppingCartServiceImpl.java" />
-        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/ShoppingCartController.java" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/AccountController.java" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/AddressController.java" />
-        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/BuyController.java" />
         <option value="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/UserListItem.java" />
-        <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/GoodsService.java" />
-        <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/GoodsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/GoodsDetailController.java" />
         <option value="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/web/Address.java" />
         <option value="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/admin/BusinessBean.java" />
         <option value="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/GoodsBean.java" />
@@ -237,12 +199,9 @@
         <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/AccountService.java" />
         <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/AccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/BusinessListItem.java" />
-        <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/BusinessService.java" />
-        <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/BusinessServiceImpl.java" />
         <option value="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/UserQueryType.java" />
         <option value="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/BusinessAccountController.java" />
         <option value="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/GoodsAdminController.java" />
         <option value="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/webapp/admin/adminSelected.html" />
         <option value="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/webapp/admin/login.html" />
@@ -250,13 +209,26 @@
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/city-picker.js" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/city-picker.css" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/detail.css" />
-        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/index.html" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/index/index.js" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/detail/detail.css" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/detail/detail.js" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/detail.html" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/index.css" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/SelectedController.java" />
+        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/index.html" />
+        <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/PopularGoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/SearchController.java" />
+        <option value="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/BuyBean.java" />
+        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/BuyController.java" />
+        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/GoodsDetailController.java" />
+        <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/ReplyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/ShoppingCartController.java" />
+        <option value="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/ShoppingCartBean.java" />
+        <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/BusinessService.java" />
+        <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/BusinessServiceImpl.java" />
+        <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/GoodsService.java" />
+        <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/GoodsAdminController.java" />
       </list>
     </option>
   </component>
@@ -306,8 +278,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -849,7 +822,7 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="swiftbuyWeb" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="detail" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="swiftbuy" type="b2602c69:ProjectViewProjectNode" />
@@ -860,6 +833,17 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="swiftbuyWeb" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swiftbuy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swiftbuy" type="462c0819:PsiDirectoryNode" />
+              <item name="swiftbuy-webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="swiftbuyWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="swiftbuy" type="b2602c69:ProjectViewProjectNode" />
@@ -889,7 +873,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="Addre&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/AddressIpServiceImpl.java&#10;Business&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/BusinessServiceImpl.java&#10;AddressI&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/AddressIpServiceImpl.java&#10;Address&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/web/Address.java&#10;Jooq&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/JooqService.java&#10;Shopping&#9;PSI&#9;JAVA://com.ywj.swiftbuy.bean.ShoppingCartBean&#10;GoodSer&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/GoodsServiceImpl.java&#10;Hist&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/web/HistoryType.java&#10;His&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/HistoryServiceImpl.java&#10;Bu&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/BusinessServiceImpl.java&#10;User&#9;PSI&#9;JAVA://com.ywj.swiftbuy.admin.UserType&#10;Accou&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/AccountController.java&#10;GoodsR&#9;PSI&#9;JAVA://com.ywj.swiftbuy.dao.model.tables.records.GoodsRecord&#10;Acc&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/AccountController.java&#10;Too&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/ToolController.java" />
+    <property name="SearchEverywhereHistoryKey" value="GoodsSer&#9;PSI&#9;JAVA://com.ywj.swiftbuy.service.common.Impl.GoodsServiceImpl&#10;Addre&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/AddressIpServiceImpl.java&#10;Business&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/BusinessServiceImpl.java&#10;AddressI&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/AddressIpServiceImpl.java&#10;Address&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/web/Address.java&#10;Jooq&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/JooqService.java&#10;Shopping&#9;PSI&#9;JAVA://com.ywj.swiftbuy.bean.ShoppingCartBean&#10;GoodSer&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/GoodsServiceImpl.java&#10;Hist&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/web/HistoryType.java&#10;His&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/HistoryServiceImpl.java&#10;Bu&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/BusinessServiceImpl.java&#10;User&#9;PSI&#9;JAVA://com.ywj.swiftbuy.admin.UserType&#10;Accou&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/AccountController.java&#10;GoodsR&#9;PSI&#9;JAVA://com.ywj.swiftbuy.dao.model.tables.records.GoodsRecord&#10;Acc&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/AccountController.java&#10;Too&#9;FILE&#9;file:///Users/ywj/graduationDesign/swiftbuy/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/ToolController.java" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -926,7 +910,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.swiftbuy-webapp">
+  <component name="RunManager" selected="Tomcat Server.address.html">
     <configuration name="AddressIpServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -8879,6 +8863,45 @@
         </option>
       </method>
     </configuration>
+    <configuration name="address.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0.81" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/swiftbuyWeb/address.html" />
+      <deployment>
+        <artifact name="swiftbuy-webapp:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="address_html_swiftbuy" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="swiftbuy-webapp:war" />
+        </option>
+      </method>
+    </configuration>
     <configuration name="swiftbuy-adminWeb" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.81" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
@@ -9127,18 +9150,20 @@
         </option>
       </MavenSettings>
     </configuration>
-    <list size="6">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Maven.test" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.swiftbuy-webapp" />
       <item index="2" class="java.lang.String" itemvalue="Tomcat Server.swiftbuy-common" />
       <item index="3" class="java.lang.String" itemvalue="Tomcat Server.swiftbuy-adminWeb" />
       <item index="4" class="java.lang.String" itemvalue="Application.AddressIpServiceImpl" />
       <item index="5" class="java.lang.String" itemvalue="Application.AdminLoginServiceImpl" />
+      <item index="6" class="java.lang.String" itemvalue="Tomcat Server.address.html" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.AdminLoginServiceImpl" />
-        <item index="1" class="java.lang.String" itemvalue="Application.AddressIpServiceImpl" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Tomcat Server.address.html" />
+        <item index="1" class="java.lang.String" itemvalue="Application.AdminLoginServiceImpl" />
+        <item index="2" class="java.lang.String" itemvalue="Application.AddressIpServiceImpl" />
       </list>
     </recent_temporary>
   </component>
@@ -9170,12 +9195,12 @@
       <workItem from="1521782777037" duration="31977000" />
       <workItem from="1522403557266" duration="1124000" />
       <workItem from="1522725614236" duration="115148000" />
-      <workItem from="1523694870996" duration="12042000" />
+      <workItem from="1523694870996" duration="17451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323330000" />
+    <option name="totallyTimeSpent" value="328739000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -9188,6 +9213,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.5100143" order="7" side_tool="true" content_ui="tabs" />
@@ -9207,11 +9233,12 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5" sideWeight="0.4899857" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.4899857" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25995025" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2725322" sideWeight="0.4800995" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21387696" sideWeight="0.5199005" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -9220,7 +9247,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -9241,162 +9267,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/AddressIpService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/web/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="29" column="69" lean-forward="false" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="130" column="13" lean-forward="false" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/Status.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="25" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/AccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="64" column="19" lean-forward="false" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/utils/Md5Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/UserListItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="17" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/AddressIpServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/CommonResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/tables/Business.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1308">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/tables/records/BusinessRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="558" column="23" lean-forward="false" selection-start-line="558" selection-start-column="23" selection-end-line="558" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/BusinessService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="28" column="59" lean-forward="false" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/UserQueryType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="e#559#560#0" expanded="false" />
-            <element signature="e#593#594#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-common/src/main/java/com/ywj/swiftbuy/common/controller/ErrorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-adminWeb/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/ToolController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/AddressAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="40" column="29" lean-forward="false" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/GoodsAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="888">
@@ -9420,16 +9290,6 @@
         <state relative-caret-position="160">
           <caret line="27" column="61" lean-forward="false" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="80" column="35" lean-forward="false" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -9474,14 +9334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/address.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/city-picker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -9508,14 +9360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/city-picker.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -9532,34 +9376,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/detail/detail.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="236" column="0" lean-forward="true" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/GoodsDetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="40" column="20" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/GoodsDetailBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/index/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="57" column="30" lean-forward="true" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -9580,22 +9400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="218" column="16" lean-forward="true" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/HistoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="71" column="38" lean-forward="false" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
@@ -9604,48 +9408,268 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/city-picker.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-562">
+          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/index/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-415">
+          <caret line="218" column="16" lean-forward="true" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/detail/detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="236" column="0" lean-forward="true" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="68" column="42" lean-forward="true" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+        <state relative-caret-position="1449">
+          <caret line="85" column="53" lean-forward="false" selection-start-line="85" selection-start-column="53" selection-end-line="85" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/BusinessAccountController.java">
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/SelectedController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="363">
+          <caret line="145" column="67" lean-forward="true" selection-start-line="145" selection-start-column="67" selection-end-line="145" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/PopularGoodsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/BuyBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/HistoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="106" column="19" lean-forward="false" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/BuyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="56" column="23" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/BuyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/JooqService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="351" column="0" lean-forward="false" selection-start-line="351" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
+        <state relative-caret-position="259">
+          <caret line="197" column="44" lean-forward="false" selection-start-line="197" selection-start-column="44" selection-end-line="197" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/ReplyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="43" column="34" lean-forward="false" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="65" column="15" lean-forward="false" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/address.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-583">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/GoodsDetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="49" column="59" lean-forward="false" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/ShoppingCartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/ShoppingCartServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/ShoppingCartBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/UserListItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="117" column="22" lean-forward="false" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2163">
+          <caret line="123" column="55" lean-forward="true" selection-start-line="123" selection-start-column="55" selection-end-line="123" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/JacksonViews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/BusinessAccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="82" column="61" lean-forward="false" selection-start-line="82" selection-start-column="61" selection-end-line="82" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/GoodsBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/BusinessService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/BusinessServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        <state relative-caret-position="252">
+          <caret line="141" column="25" lean-forward="false" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2583#2584#0" expanded="true" />
-            <element signature="e#2650#2651#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/SelectedController.java">
+    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/GoodsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="150" column="5" lean-forward="true" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
+        <state relative-caret-position="588">
+          <caret line="31" column="69" lean-forward="false" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/GoodsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="73" column="13" lean-forward="false" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/GoodsAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>

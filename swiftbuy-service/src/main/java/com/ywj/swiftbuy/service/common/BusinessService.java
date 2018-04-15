@@ -14,7 +14,7 @@ public interface BusinessService {
 
     boolean update(BusinessBean business);
 
-    void updateUid(int uid,int id);
+    void updateUid(int uid, int id);
 
     void updatePassword(int uid, String password);
 
@@ -27,4 +27,6 @@ public interface BusinessService {
     List<BusinessBean> getBusinessListByAddress(String query);
 
     List<BusinessBean> getBusinessListByName(String query);
+
+    List<Integer> getIdList(String name);
 }

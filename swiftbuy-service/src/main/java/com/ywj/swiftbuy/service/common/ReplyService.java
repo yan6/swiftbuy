@@ -7,5 +7,5 @@ import java.util.List;
 public interface ReplyService {
     ReplyBean get(int id);
 
-    List<ReplyBean> getReplyBeanList(int goodsId);
+    List<ReplyBean> getReplyBeanList(int goodsId, int num);
 }

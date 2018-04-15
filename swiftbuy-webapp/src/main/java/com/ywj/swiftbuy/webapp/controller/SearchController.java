@@ -33,9 +33,30 @@ public class SearchController {
     @Autowired
     private SearchService searchService;
 
+
+    /**
+     * 不做分页展示接口
+     * @param query
+     * @param start
+     * @param num
+     * @return
+     */
     @RequestMapping(value = "", method = RequestMethod.GET)
     @ResponseBody
-    public RecentGoods search(@RequestParam(value = "query", required = false, defaultValue = "") String query,
+    public List<GoodsBean> search(@RequestParam(value = "query", required = false, defaultValue = "") String query,
+                              @RequestParam(value = "start", required = false, defaultValue = "0") int start,
+                              @RequestParam(value = "num", required = false, defaultValue = "10") int num) {
+        if (StringUtils.isBlank(query))
+            return null;
+        List<GoodsBean> goodsBeanList = searchService.searchGoods(query);
+        if (CollectionUtils.isEmpty(goodsBeanList))
+            return null;
+        return ListUtils.getSubList(goodsBeanList, start, num);
+    }
+
+    @RequestMapping(value = "/searchCanPage", method = RequestMethod.GET)
+    @ResponseBody
+    public RecentGoods searchCanPage(@RequestParam(value = "query", required = false, defaultValue = "") String query,
                               @RequestParam(value = "start", required = false, defaultValue = "0") int start,
                               @RequestParam(value = "num", required = false, defaultValue = "10") int num) {
         if (StringUtils.isBlank(query))

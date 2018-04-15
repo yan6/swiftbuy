@@ -38,7 +38,8 @@ public class GoodsDetailController {
      */
     @RequestMapping(value = "/detail", method = RequestMethod.GET)
     @ResponseBody
-    public GoodsDetailBean getGoodsDetail(@RequestParam(value = "id", required = true) int id) {
+    public GoodsDetailBean getGoodsDetail(@RequestParam(value = "id", required = true) int id,
+                                          @RequestParam(value = "num",required = false,defaultValue = "8")int num) {
         if (id < 0)
             id = 1;
         GoodsDetailBean goodsDetailBean = new GoodsDetailBean();
@@ -46,7 +47,7 @@ public class GoodsDetailController {
         goodsDetailBean.setGoods(goods);
         if (goods != null)
             goodsDetailBean.setBusiness(businessService.get(goods.getBusinessId()));
-        goodsDetailBean.setReplyBeanList(replyService.getReplyBeanList(id));
+        goodsDetailBean.setReplyBeanList(replyService.getReplyBeanList(id, num));
         return goodsDetailBean;
     }
 }

@@ -25,9 +25,6 @@ public class PopularGoodsServiceImpl extends CommonService implements PopularGoo
     /**
      * 管理员自定义一批流行商品
      */
-
-
-
     @Override
     public List<Integer> getDefaultPopularGoodsId(int num) {
         List<PopularGoodsBean> list = select(TABLE, TABLE.STATUS.eq(Status.online.getValue()), TABLE.CREATE_TIME.desc(), 4, PopularGoodsBean.class);

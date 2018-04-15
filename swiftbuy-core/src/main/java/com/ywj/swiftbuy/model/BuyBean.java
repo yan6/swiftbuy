@@ -34,4 +34,5 @@ public class BuyBean {
     private int uid;
     private Date createTime;
     private int status;
+    private String buyUsername;
 }

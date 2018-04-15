@@ -28,10 +28,11 @@ public class ReplyServiceImpl extends CommonService implements ReplyService {
     }
 
     @Override
-    public List<ReplyBean> getReplyBeanList(int goodsId) {
+    public List<ReplyBean> getReplyBeanList(int goodsId, int num) {
         List<ReplyBean> list = select(TABLE,
                 TABLE.GOODS_ID.eq(goodsId).and(TABLE.STATUS.eq(Status.online.getValue())),
                 TABLE.CREATE_TIME.desc(),
+                num,
                 ReplyBean.class);
         if (CollectionUtils.isEmpty(list))
             return new ArrayList<>();

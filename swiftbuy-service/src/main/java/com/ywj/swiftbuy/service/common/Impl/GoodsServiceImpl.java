@@ -1,21 +1,24 @@
 package com.ywj.swiftbuy.service.common.Impl;
 
+import com.ywj.swiftbuy.admin.BusinessBean;
 import com.ywj.swiftbuy.bean.GoodsBean;
 import com.ywj.swiftbuy.bean.SortStrategy;
 import com.ywj.swiftbuy.bean.Status;
 import com.ywj.swiftbuy.dao.model.tables.Goods;
 import com.ywj.swiftbuy.dao.model.tables.SelectedGoods;
 import com.ywj.swiftbuy.dao.model.tables.records.GoodsRecord;
+import com.ywj.swiftbuy.service.common.BusinessService;
 import com.ywj.swiftbuy.service.common.CommonService;
 import com.ywj.swiftbuy.service.common.GoodsService;
+import com.ywj.swiftbuy.utils.ListUtils;
 import org.apache.commons.collections.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
 /**
@@ -30,6 +33,9 @@ public class GoodsServiceImpl extends CommonService implements GoodsService {
     private static final Goods TABLE = Goods.GOODS;
 
     private static final SelectedGoods SELECTED_GOODS = SelectedGoods.SELECTED_GOODS; //首页默认显示第一个商品列表，有后台控制
+
+    @Autowired
+    private BusinessService businessService;
 
     @Override
     public GoodsBean getGoodsById(int id) {
@@ -56,6 +62,37 @@ public class GoodsServiceImpl extends CommonService implements GoodsService {
     public List<GoodsBean> getGoodsListByBusinessId(int businessId, int categoryId) {
         return select(TABLE,
                 TABLE.BUSINESS_ID.eq(businessId).and(TABLE.CATEGORY_ID.eq(categoryId)),
+                GoodsBean.class);
+    }
+
+    /**
+     * 根据商家名称，获取商品名称，固定num个
+     * @param name
+     * @param num
+     * @return
+     */
+    @Override
+    public List<GoodsBean> getGoodsListByBusinessName(String name, int num) {
+        List<Integer> idList = businessService.getIdList(name);
+        if (CollectionUtils.isEmpty(idList))
+            return null;
+        List<GoodsBean> list = new ArrayList<>();
+        for (Integer businessId : idList) {
+            List<GoodsBean> goodsList = getGoodsList(businessId);
+            if (CollectionUtils.isEmpty(goodsList))
+                continue;
+            list.addAll(goodsList);
+            if (list.size() >= num) {
+                list = ListUtils.getSubList(list, 0, num);
+                break;
+            }
+        }
+        return list;
+    }
+
+    public List<GoodsBean> getGoodsList(int businessId) {
+        return select(TABLE,
+                TABLE.BUSINESS_ID.eq(businessId).and(TABLE.STATUS.eq(Status.online.getValue())),
                 GoodsBean.class);
     }
 

@@ -4,10 +4,7 @@ import com.ywj.swiftbuy.bean.HistoryBean;
 import com.ywj.swiftbuy.model.APIResponse;
 import com.ywj.swiftbuy.model.BuyBean;
 import com.ywj.swiftbuy.model.SuccessAPIResponse;
-import com.ywj.swiftbuy.service.common.AddressIpService;
-import com.ywj.swiftbuy.service.common.BuyService;
-import com.ywj.swiftbuy.service.common.GoodsService;
-import com.ywj.swiftbuy.service.common.HistoryService;
+import com.ywj.swiftbuy.service.common.*;
 import com.ywj.swiftbuy.thread.ThreadPool;
 import com.ywj.swiftbuy.web.HistoryType;
 import org.slf4j.Logger;
@@ -28,7 +25,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping(value = "/api/buy")
 public class BuyController {
 
-    private static final Logger LOG= LoggerFactory.getLogger(BuyController.class);
+    private static final Logger LOG = LoggerFactory.getLogger(BuyController.class);
 
     @Autowired
     private AddressIpService addressIpService;
@@ -41,6 +38,9 @@ public class BuyController {
 
     @Autowired
     private GoodsService goodsService;
+
+    @Autowired
+    private AccountService accountService;
 
     /**
      * 点击购买  弹出表单（商品id,收件人姓名，收件人电话，收件人地址，确认购买,用户uid）
@@ -62,6 +62,12 @@ public class BuyController {
         ThreadPool.getInstance().exec(() -> {
             try {
                 String city = addressIpService.getCurrentIdAddress();
+                if (buy.getUid() <= 0 && buy.getBuyUsername() != null) {
+                    int uidByUsername = accountService.getUidByUsername(buy.getBuyUsername());
+                    if (uidByUsername<0)
+                        return;
+                    buy.setUid(uidByUsername);
+                }
                 HistoryBean historyBean = new HistoryBean(buy.getUid(), buy.getGoodsId(), city, HistoryType.buy.getValue());
                 historyService.insert(historyBean);
             } catch (Exception e) {

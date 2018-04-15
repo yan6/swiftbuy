@@ -28,4 +28,6 @@ public interface GoodsService {
     boolean updateRemainCount(int id, int count);
 
     List<GoodsBean> getDefaultShowList(int num);
+
+    List<GoodsBean> getGoodsListByBusinessName(String name, int num);
 }

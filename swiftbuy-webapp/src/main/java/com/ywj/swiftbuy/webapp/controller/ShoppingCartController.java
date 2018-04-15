@@ -4,6 +4,7 @@ import com.ywj.swiftbuy.bean.ShoppingCartBean;
 import com.ywj.swiftbuy.model.APIResponse;
 import com.ywj.swiftbuy.model.FailureAPIResponse;
 import com.ywj.swiftbuy.model.SuccessAPIResponse;
+import com.ywj.swiftbuy.service.common.AccountService;
 import com.ywj.swiftbuy.service.common.ShoppingCartService;
 import org.apache.commons.collections.CollectionUtils;
 import org.slf4j.Logger;
@@ -18,7 +19,7 @@ import java.util.List;
  * 购物车
  * 1.添加商品进购物车
  * 2.从购物车删除商品
- * 3.购物车列表
+ * 3.购物车列表(uid,username两种方式获得)
  */
 
 @Controller
@@ -30,12 +31,18 @@ public class ShoppingCartController {
     @Autowired
     private ShoppingCartService shoppingCartService;
 
+    @Autowired
+    private AccountService accountService;
+
     //加入购物车
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     @ResponseBody
     public APIResponse add(@RequestBody ShoppingCartBean shoppingCart) {
         if (shoppingCart == null)
             return new FailureAPIResponse("失败");
+        if (shoppingCart.getUid() <= 0 && shoppingCart.getUsername() != null) {
+            shoppingCart.setUid(accountService.getUidByUsername(shoppingCart.getUsername()));
+        }
         //如果存在只修改状态
         return shoppingCartService.add(shoppingCart) ? new SuccessAPIResponse() : new FailureAPIResponse("加入购物车失败");
     }
@@ -48,8 +55,22 @@ public class ShoppingCartController {
         return shoppingCartService.updateStatus(id) ? new SuccessAPIResponse() : new FailureAPIResponse("id不存在");
     }
 
-    //获取购物车列表
+    //获取购物车列表,username方式
     @RequestMapping(value = "/list", method = RequestMethod.GET)
+    @ResponseBody
+    public List<ShoppingCartBean> getList(@RequestParam(value = "username", required = true) String username) {
+        //订单id
+        int uid = accountService.getUidByUsername(username);
+        if (uid <= 0)
+            return null;
+        List<ShoppingCartBean> list = shoppingCartService.getListByUid(uid);
+        if (CollectionUtils.isEmpty(list))
+            return null;
+        return list;
+    }
+
+    //获取购物车列表,uid方式
+    @RequestMapping(value = "/shopCartList", method = RequestMethod.GET)
     @ResponseBody
     public List<ShoppingCartBean> getList(@RequestParam(value = "uid", required = true) int uid) {
         //订单id
