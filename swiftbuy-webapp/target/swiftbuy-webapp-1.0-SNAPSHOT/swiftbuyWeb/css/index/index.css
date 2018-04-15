@@ -201,10 +201,11 @@ p, h1, h2, h3, h4, h5, h6, form, ul, ol, li, dl, dt, dd {
 }
 .item-img {
     display: block;
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
     float: left;
 }
 .item-detail {

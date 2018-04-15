@@ -82,7 +82,7 @@ public class SelectedController {
                                           @RequestParam(value = "county", required = false, defaultValue = "") String county,
                                           @RequestParam(value = "strategy", required = false, defaultValue = "date") SortStrategy strategy,
                                           @RequestParam(value = "start", required = false, defaultValue = "0") int start,
-                                          @RequestParam(value = "num", required = false, defaultValue = "8") int num) {
+                                          @RequestParam(value = "num", required = false, defaultValue = "6") int num) {
         //city，county定位到商家business_id   ,business_id,categoryName定位到商品
         //TODO city county categoryName缺少，就默认一个推荐列表
         RecentGoods recentGoods = new RecentGoods();
@@ -118,7 +118,7 @@ public class SelectedController {
     @RequestMapping(value = "/recommendGoodsList", method = RequestMethod.GET)
     @ResponseBody
     public List<GoodsBean> recommendGoodsList(@RequestParam(value = "username", required = false, defaultValue = "") String username,
-                                              @RequestParam(value = "num", required = false, defaultValue = "8") int num) {
+                                              @RequestParam(value = "num", required = false, defaultValue = "6") int num) {
         //TODO 默认值还需设定下
         if (StringUtils.isEmpty(username) || StringUtils.isBlank(username)) {
             //走大众推荐入口
@@ -140,7 +140,7 @@ public class SelectedController {
      */
     @RequestMapping(value = "/hotGoodsList", method = RequestMethod.GET)
     @ResponseBody
-    public List<GoodsBean> hotGoodsList(@RequestParam(value = "num", required = false, defaultValue = "8") int num) {
+    public List<GoodsBean> hotGoodsList(@RequestParam(value = "num", required = false, defaultValue = "6") int num) {
         int popularNum = num / 2;
         int commonNum = num - popularNum;
         List<Integer> popularGoodsId = popularGoodsService.getDefaultPopularGoodsId(popularNum);
