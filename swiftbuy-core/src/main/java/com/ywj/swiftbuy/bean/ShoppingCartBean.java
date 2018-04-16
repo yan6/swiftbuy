@@ -20,6 +20,5 @@ public class ShoppingCartBean {
     private int status;//shoppingCartStatus
     private int count;//购物车中商品数量
     private String username;//如果前端传uid不方便，则传username
-//    @JsonIgnore
-//    private GoodsBean goods;
+    private GoodsBean goods;
 }

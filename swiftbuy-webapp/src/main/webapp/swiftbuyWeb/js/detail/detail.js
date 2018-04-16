@@ -80,7 +80,7 @@ var detail = {
         }
     },
     formatDate: function (date) {
-        var replyDate = !!date && date || new Date().getTime();
+        var replyDate = !!date && new Date(date) || new Date();
 
         var year = replyDate.getFullYear(),
             month = replyDate.getMonth() + 1,

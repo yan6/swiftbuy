@@ -14,8 +14,7 @@
             <div class="index-top-user clearfix">
                 <p class="user-address">北京</p>
                 <p class="user-detail">
-                    <span class="detail-link line">用户</span>
-                    <span class="detail-link line">个人主页</span>
+                    <span class="detail-link line j-detail-link">用户</span>
                     <span class="detail-link">购物车</span>
                 </p>
             </div>
@@ -23,8 +22,8 @@
                 <div class="search-content clearfix">
                     <img class="search-icon" src="https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png" alt="">
                     <p class="search-detail clearfix">
-                        <input class="search-detail-input" type="text" placeholder="请输入搜索内容">
-                        <a class="search-detail-btn" href="javascript:;">搜索</a>
+                        <input class="search-detail-input" name="search" type="text" placeholder="请输入搜索内容">
+                        <a class="search-detail-btn j-search-detail-btn" href="javascript:;">搜索</a>
                     </p>
                 </div>
             </div>
@@ -45,10 +44,26 @@
                 <div class="index-address-main clearfix">
                     <span class="address-info">类型选择：</span>
                     <ul class="style-detail">
-                        <li class="style-detail-list" data-id="1">服装</li>
-                        <li class="style-detail-list" data-id="2">电子产品</li>
-                        <li class="style-detail-list" data-id="3">书籍</li>
-                        <li class="style-detail-list" data-id="4">食品</li>
+                        <li class="style-detail-list" data-id="1">
+                            <label for="type1">服装
+                                <input id="type1" class="search-type" type="radio" name="search-type" value="服装" />
+                            </label>
+                        </li>
+                        <li class="style-detail-list selected-list" data-id="2">
+                            <label for="type2">电子产品
+                                <input id="type2" class="search-type" type="radio" name="search-type" value="电子产品" />
+                            </label>
+                        </li>
+                        <li class="style-detail-list" data-id="3">
+                            <label for="type3">书籍
+                                <input id="type3" class="search-type" type="radio" name="search-type" value="书籍" />
+                            </label>
+                        </li>
+                        <li class="style-detail-list" data-id="4">
+                            <label for="type4">食品
+                                <input id="type4" class="search-type" type="radio" name="search-type" value="食品" />
+                            </label>
+                        </li>
                     </ul>
                 </div>
                 <div class="index-address-main main-address clearfix">
@@ -58,7 +73,7 @@
                     </div>
                 </div>
                 <div class="index-address-main main-search clearfix">
-                    <a class="address-search-btn" href="javascript:;">搜索</a>
+                    <a class="address-search-btn j-address-search-btn" href="javascript:;">搜索</a>
                 </div>
             </div>
             <div class="index-shop">

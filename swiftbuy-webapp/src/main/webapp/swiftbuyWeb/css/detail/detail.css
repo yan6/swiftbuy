@@ -234,6 +234,42 @@ p, h1, h2, h3, h4, h5, h6, form, ul, ol, li, dl, dt, dd {
     text-align: right;
 }
 
+.index-footer {
+    width: 100%;
+    height: 150px;
+    background: #333;
+}
+.index-footer-ul {
+    width: 1190px;
+    height: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.index-footer-item {
+    font-size: 14px;
+    color: #fff;
+    line-height: 50px;
+    padding: 0 20px;
+    float: left;
+    position: relative;
+}
+.index-footer-item:after {
+    position: absolute;
+    right: 0;
+    top: 13px;
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 24px;
+    background: #495467;
+}
+.index-footer-info {
+    font-size: 12px;
+    color: #78808d;
+    width: 1190px;
+    margin: 45px auto;
+}
+
 
 /* ===== 清除浮动 ===== */
 .clearfix {

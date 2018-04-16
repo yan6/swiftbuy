@@ -157,6 +157,13 @@ p, h1, h2, h3, h4, h5, h6, form, ul, ol, li, dl, dt, dd {
     padding: 0 10px;
     float: left;
 }
+.selected-list {
+    color: #FFFFFF;
+    background: #198A27;
+}
+.search-type {
+    display: none;
+}
 .address-detail {
     width: 300px;
     padding: 9px 15px;
@@ -198,6 +205,13 @@ p, h1, h2, h3, h4, h5, h6, form, ul, ol, li, dl, dt, dd {
     float: left;
     border: 1px solid #ccc;
     border-radius: 6px;
+}
+.shop-content-item-no {
+    font-size: 20px;
+    line-height: 100px;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
 }
 .item-img {
     display: block;
