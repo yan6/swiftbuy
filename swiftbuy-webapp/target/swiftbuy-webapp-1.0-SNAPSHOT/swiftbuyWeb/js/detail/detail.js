@@ -4,10 +4,18 @@
  */
 
 var detail = {
+    curUserName: '',
+    curShopId: '',
     init: function () {
         var curShopId = location.search && location.search.split('=')[1];
 
+        this.curUserName = this.getCookie('userName');
+
         this.getShopData(curShopId);
+
+        this.sureBuyBtnEvent();
+
+        $('.j-back-index').attr('href', '/swiftbuy/views/index.html?username=' + this.curUserName);
     },
     getShopData: function (shopId) {
         var that = this;
@@ -24,6 +32,8 @@ var detail = {
                 shopDataArr[0] = result.goods;
                 shopDataArr[1] = result.business;
                 shopDataArr[2] = result.replyBeanList;
+
+                that.curShopId = result.goods.id;
 
                 that.renderShopDetailDom(shopDataArr);
             },
@@ -57,8 +67,15 @@ var detail = {
                 '<span class="price">'+ dataList.priceBase +'元</span>' +
                 '<span class="num">'+ dataList.remainCount +'件</span>' +
                 '</p>' +
+                '<p class="shop-buy clearfix">' +
+                '<a class="shop-btn j-shop-btn">加入购物车</a>' +
+                '<a class="buy-btn j-shop-buy">购 买</a>' +
+                '</p>' +
                 '</div>';
             $(renderParDom).html(detailShop);
+
+            // 调用添加购物车事件
+            that.addShopEvent();
         }
         function renderBusinessHtml(dataList, renderParDom) {
             detailBusiness += '<img class="business-img" src="'+ dataList.icon +'">' +
@@ -90,6 +107,82 @@ var detail = {
             seconds = replyDate.getSeconds();
 
         return year + '年' + month + '月' + day + '日' + ' ' + hours + '时' + minutes + '分' + seconds + '秒';
+    },
+    addShopEvent: function() {
+        var that = this;
+        // 加入购物车
+        $('body').on('click', '.j-shop-btn', function (e) {
+            e.preventDefault();
+            var ajaxData = {
+                goodsId: that.curShopId,
+                username: that.curUserName
+            };
+            $.ajax({
+                type: "get",
+                dataType: "json",
+                url: "http://localhost:8080/api/shoppingCart/add",
+                data: ajaxData, // JSON.stringify(ajaxData),
+                success: function (result) {
+                    if (result && result.resultCode === 200) {
+                        alert('添加购物车成功！');
+                    } else {
+                        alert('添加购物车失败！');
+                    }
+                },
+                error: function (err) {
+                    alert("购买失败！" + err);
+                }
+            });
+        });
+
+        // 购买
+        $('body').on('click', '.j-shop-buy', function (e) {
+            e.preventDefault();
+            $('input[name=goodsId]').val(that.curShopId);
+            $('input[name=username]').val(that.curUserName);
+            $('.j-shop-buy-dialog').show();
+        });
+    },
+    sureBuyBtnEvent: function () {
+        $('.j-sure-buy-btn').on('click', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: "get",
+                dataType: "json",
+                url: "http://localhost:8080/api/buy/buyShop",
+                data: $('.shop-buy-dialog-form').serialize(),
+                success: function (result) {
+                    if (result && result.resultCode === 200) {
+                        alert('购买商品成功!');
+                        $('.j-shop-buy-dialog').hide();
+                    } else {
+                        alert('购买失败!');
+                    }
+                },
+                error: function (err) {
+                    alert("购买失败！" + err);
+                }
+            });
+        });
+
+        $('.j-close-dialog').on('click', function (e) {
+            e.preventDefault();
+            $('.j-shop-buy-dialog').hide();
+        })
+    },
+    getCookie: function(c_name) {
+        if (document.cookie.length>0)
+        {
+            c_start=document.cookie.indexOf(c_name + "=")
+            if (c_start!=-1)
+            {
+                c_start=c_start + c_name.length+1
+                c_end=document.cookie.indexOf(";",c_start)
+                if (c_end==-1) c_end=document.cookie.length
+                return unescape(document.cookie.substring(c_start,c_end))
+            }
+        }
+        return ""
     }
 };
 

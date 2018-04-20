@@ -37,14 +37,10 @@ public class ShoppingCartController {
     //加入购物车
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     @ResponseBody
-    public APIResponse add(@RequestBody ShoppingCartBean shoppingCart) {
-        if (shoppingCart == null)
-            return new FailureAPIResponse("失败");
-        if (shoppingCart.getUid() <= 0 && shoppingCart.getUsername() != null) {
-            shoppingCart.setUid(accountService.getUidByUsername(shoppingCart.getUsername()));
-        }
+    public APIResponse add(@RequestParam(value = "goodsId", required = true) int goodsId,
+                           @RequestParam(value = "username", required = true) String username) {
         //如果存在只修改状态
-        return shoppingCartService.add(shoppingCart) ? new SuccessAPIResponse() : new FailureAPIResponse("加入购物车失败");
+        return shoppingCartService.add(goodsId, username) ? new SuccessAPIResponse() : new FailureAPIResponse("加入购物车失败");
     }
 
     //从购物车中删除该商品

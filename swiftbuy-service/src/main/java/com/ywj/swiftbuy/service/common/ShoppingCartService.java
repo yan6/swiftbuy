@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface ShoppingCartService {
 
-    boolean add(ShoppingCartBean shoppingCart);
+    boolean add(int goodsId, String username);
 
     boolean updateStatus(int id);
 

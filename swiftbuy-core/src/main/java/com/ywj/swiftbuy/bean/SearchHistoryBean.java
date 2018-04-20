@@ -11,12 +11,18 @@ import java.util.Date;
 @ToString
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class SearchHistory {
+public class SearchHistoryBean {
 
     private int id;
     private String query;
     private Date date;
     private int count;
-    private int categoryId;
-    private int addressId;
+    private int goodsId;
+
+    public SearchHistoryBean(String query,int goodsId){
+        this.query=query;
+        this.goodsId=goodsId;
+        this.date=new Date();
+        this.count=1;
+    }
 }

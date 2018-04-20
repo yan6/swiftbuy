@@ -97,7 +97,7 @@ p, h1, h2, h3, h4, h5, h6, form, ul, ol, li, dl, dt, dd {
     position: absolute;
     right: -74px;
     top: 0;
-    z-index: 100;
+    z-index: 98;
 }
 
 
@@ -144,7 +144,7 @@ p, h1, h2, h3, h4, h5, h6, form, ul, ol, li, dl, dt, dd {
     white-space: nowrap;
 }
 .info-main .description {
-    height: 300px;
+    height: 250px;
     font-size: 16px;
     line-height: 26px;
     color: #666;
@@ -165,6 +165,30 @@ p, h1, h2, h3, h4, h5, h6, form, ul, ol, li, dl, dt, dd {
     float: left;
 }
 .info-main .price-num .num {
+    float: right;
+}
+.info-main .shop-buy {
+    height: 50px;
+    margin-top: 10px;
+}
+.info-main .shop-buy .shop-btn,
+.info-main .shop-buy .buy-btn {
+    display: inline-block;
+    height: 40px;
+    font-size: 20px;
+    line-height: 38px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #53bfe6;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0 10px;
+    background: #53bfe6;
+}
+.info-main .shop-buy .shop-btn {
+    float: left;
+}
+.info-main .shop-buy .buy-btn {
     float: right;
 }
 
@@ -268,6 +292,86 @@ p, h1, h2, h3, h4, h5, h6, form, ul, ol, li, dl, dt, dd {
     color: #78808d;
     width: 1190px;
     margin: 45px auto;
+}
+
+.shop-buy-dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 99;
+}
+.dialog-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    width: 530px;
+    height: auto;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: 15px;
+    background: #fff;
+    z-index: 100;
+}
+.content-head {
+    height: 26px;
+    line-height: 26px;
+    font-size: 18px;
+    margin: 10px 0 20px;
+    position: relative;
+}
+.content-head .title {
+    color: #333;
+    font-size: 22px;
+}
+.content-head .close-dialog {
+    font-size: 22px;
+    position: absolute;
+    right: 0;
+    top: -15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.shop-buy-dialog-form label{
+    display: block;
+    margin-bottom: 15px;
+}
+.shop-buy-dialog-form .label-text {
+    display: inline-block;
+    width: 80px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+.shop-buy-dialog-form input {
+    display: inline-block;
+    width: 400px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    outline: 0;
+}
+.shop-buy-dialog-sure {
+    text-align: right;
+}
+.shop-buy-dialog-sure .sure-buy-btn {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #53bfe6;
+    border-radius: 4px;
+    background: #53bfe6;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 

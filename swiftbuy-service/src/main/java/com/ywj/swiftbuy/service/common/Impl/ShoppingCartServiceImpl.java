@@ -2,8 +2,11 @@ package com.ywj.swiftbuy.service.common.Impl;
 
 import com.ywj.swiftbuy.bean.ShoppingCartBean;
 import com.ywj.swiftbuy.bean.ShoppingCartStatus;
+import com.ywj.swiftbuy.bean.SimpleShoppingCartBean;
 import com.ywj.swiftbuy.dao.model.tables.ShoppingCart;
+import com.ywj.swiftbuy.dao.model.tables.records.CategoryRecord;
 import com.ywj.swiftbuy.dao.model.tables.records.ShoppingCartRecord;
+import com.ywj.swiftbuy.service.common.AccountService;
 import com.ywj.swiftbuy.service.common.CommonService;
 import com.ywj.swiftbuy.service.common.GoodsService;
 import com.ywj.swiftbuy.service.common.ShoppingCartService;
@@ -26,23 +29,37 @@ public class ShoppingCartServiceImpl extends CommonService implements ShoppingCa
     @Autowired
     private GoodsService goodsService;
 
+    @Autowired
+    private AccountService accountService;
+
     /**
      * 购物车中存在该商品，count+1,不存在则新增数据
      *
-     * @param shoppingCart
+     * @param goodsId
+     * @param username
      * @return
      */
     @Override
-    public boolean add(ShoppingCartBean shoppingCart) {
-        ShoppingCartBean shoppingCartBean = selectOneRecord(TABLE,
-                TABLE.UID.eq(shoppingCart.getUid()).and(TABLE.GOODS_ID.eq(shoppingCart.getGoodsId())).and(TABLE.STATUS.eq(ShoppingCartStatus.ONLINE.getValue())),
-                ShoppingCartBean.class);
-        if (shoppingCartBean == null)
-            return insert(TABLE, objectToRecord(shoppingCart, ShoppingCartRecord.class));
+    public boolean add(int goodsId, String username) {
+        int uid = accountService.getUidByUsername(username);
+//        ShoppingCartBean shoppingCartBean = selectOneRecord(TABLE,
+//                TABLE.UID.eq(uid).and(TABLE.GOODS_ID.eq(goodsId)).and(TABLE.STATUS.eq(ShoppingCartStatus.ONLINE.getValue())),
+//                ShoppingCartBean.class);
+        boolean ifExist = exists(TABLE, TABLE.UID.eq(uid).and(TABLE.GOODS_ID.eq(goodsId)));
+        if (!ifExist) {
+            SimpleShoppingCartBean shoppingCartBean = new SimpleShoppingCartBean();
+            shoppingCartBean.setUid(uid);
+            shoppingCartBean.setGoodsId(goodsId);
+            shoppingCartBean.setStatus(0);
+            shoppingCartBean.setCreateTime(new Date());
+            shoppingCartBean.setCount(1);
+            ShoppingCartRecord record = objectToRecord(shoppingCartBean, ShoppingCartRecord.class);
+            return insert(TABLE, record);
+        }
         Map<Field<?>, Object> fields = new HashMap<>();
         fields.put(TABLE.UPDATE_TIME, new Date());
-        fields.put(TABLE.COUNT, shoppingCartBean.getCount() + 1);
-        return update(TABLE, fields, TABLE.ID.eq(shoppingCartBean.getId()));
+        fields.put(TABLE.COUNT, +1);
+        return update(TABLE, fields, TABLE.UID.eq(uid).and(TABLE.GOODS_ID.eq(goodsId)));
     }
 
     /**

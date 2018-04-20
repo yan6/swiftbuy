@@ -1,7 +1,10 @@
+com/ywj/swiftbuy/admin/controller/BusinessAccountController.class
+com/ywj/swiftbuy/admin/controller/LoginController.class
+com/ywj/swiftbuy/admin/controller/BusinessAccountController$1.class
+com/ywj/swiftbuy/admin/controller/UserController$1.class
 com/ywj/swiftbuy/admin/controller/CategoryAdminController.class
 com/ywj/swiftbuy/admin/controller/AddressAdminController.class
 com/ywj/swiftbuy/admin/controller/GoodsAdminController.class
 com/ywj/swiftbuy/admin/controller/ToolController.class
-com/ywj/swiftbuy/admin/controller/BusinessAccountController.class
-com/ywj/swiftbuy/admin/controller/LoginController.class
+com/ywj/swiftbuy/admin/controller/GoodsAdminController$1.class
 com/ywj/swiftbuy/admin/controller/UserController.class

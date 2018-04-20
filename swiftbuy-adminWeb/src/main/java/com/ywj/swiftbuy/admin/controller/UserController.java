@@ -43,7 +43,7 @@ public class UserController {
     /**
      *  新增用户
      */
-    @RequestMapping(value = "/insert", method = RequestMethod.POST)
+    @RequestMapping(value = "/insert", method = RequestMethod.GET)
     @ResponseBody
     @JsonView(JacksonViews.Admin.class)
     public APIResponse insert(@RequestParam(value = "username", required = false, defaultValue = "") String username,

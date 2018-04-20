@@ -1,0 +1,166 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>后台模板管理系统</title>
+    <link type="text/css" rel="stylesheet" href="../css/index.css"/>
+    <script type="text/javascript" src="../js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="../js/menu.js"></script>
+</head>
+
+<body>
+    <div class="top"></div>
+    <div id="header">
+        <div class="logo">迅购网后台管理系统</div>
+        <div class="navigation">
+            <ul>
+                <li>欢迎您！</li>
+                <li>
+                    <a href="">admin</a>
+                </li>
+                <li>
+                    <a href="">修改密码</a>
+                </li>
+                <li>
+                    <a href="">设置</a>
+                </li>
+                <li>
+                    <a href="">退出</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <div class="left_menu">
+            <ul id="nav_dot">
+                <li class="selected">
+                    <h4 class="M1"><span></span>用户管理</h4>
+                    <div class="list-item">
+                        <a href='javascript:;' class="j-add-new-data" data-id="0">新增用户</a>
+                    </div>
+                </li>
+                <li>
+                    <h4 class="M2"><span></span>商家管理</h4>
+                    <div class="list-item none">
+                        <a href='javascript:;' class="j-add-new-data" data-id="1">新增商家</a>
+                    </div>
+                </li>
+                <li>
+                    <h4 class="M3"><span></span>商品管理</h4>
+                    <div class="list-item none">
+                        <a href='javascript:;' class="j-add-new-data" data-id="2">新增商品</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="m-right">
+            <div class="right-nav">
+                <ul>
+                    <li style="margin-left:25px;">您当前的位置：</li>
+                    <li>
+                        <span>后台管理</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="main">
+                <form action="" class="main-form j-add-manage-form0">
+                    <div class="user-manage">
+                        <label for="userName">
+                            <span class="info-data">用户名：</span>
+                            <input type="text" id="userName" name="username" placeholder="请输入用户名" />
+                        </label>
+                        <label for="password">
+                            <span class="info-data">密码：</span>
+                            <input type="text" id="password" name="password" placeholder="请输入密码" />
+                        </label>
+                        <label for="telPhone">
+                            <span class="info-data">电话号码：</span>
+                            <input type="text" id="telPhone" name="phone" placeholder="请输入电话号码" />
+                        </label>
+                    </div>
+                </form>
+                <form action="" class="main-form j-add-manage-form1">
+                    <div class="business-manage">
+                        <label for="busi-name">
+                            <span class="info-data">商家名称：</span>
+                            <input type="text" id="busi-name" name="name" placeholder="请输入商家名" />
+                        </label>
+                        <label for="busi-desc">
+                            <span class="info-data">商家描述：</span>
+                            <input type="text" id="busi-desc" name="description" placeholder="请输入商家描述" />
+                        </label>
+                        <label for="busi-province">
+                            <span class="info-data">省份：</span>
+                            <input type="text" id="busi-province" name="province" placeholder="请输入所属省份" />
+                        </label>
+                        <label for="busi-city">
+                            <span class="info-data">城市：</span>
+                            <input type="text" id="busi-city" name="city" placeholder="请输入所属城市" />
+                        </label>
+                        <label for="busi-county">
+                            <span class="info-data">地区：</span>
+                            <input type="text" id="busi-county" name="county" placeholder="请输入所属地区" />
+                        </label>
+                        <label for="busi-password">
+                            <span class="info-data">密码：</span>
+                            <input type="text" id="busi-password" name="password" placeholder="请输入密码" />
+                        </label>
+                        <label for="busi-telPhone">
+                            <span class="info-data">电话号码：</span>
+                            <input type="text" id="busi-telPhone" name="phone" placeholder="请输入电话号码" />
+                        </label>
+                    </div>
+                </form>
+                <form action="" class="main-form j-add-manage-form2">
+                    <div class="shop-manage">
+                        <label for="shop-businessId">
+                            <span class="info-data">商家id：</span>
+                            <input type="text" id="shop-businessId" name="businessId" placeholder="请输入商家id" />
+                        </label>
+                        <label for="shop-name">
+                            <span class="info-data">商品名称：</span>
+                            <input type="text" id="shop-name" name="name" placeholder="请输入商品名称" />
+                        </label>
+                        <label for="shop-categoryId">
+                            <span class="info-data">分类id:</span>
+                            <input type="text" id="shop-categoryId" name="categoryId" placeholder="请输入商品分类id" />
+                        </label>
+                        <label for="shop-img">
+                            <span class="info-data">商品图片：</span>
+                            <input type="text" id="shop-img" name="image" placeholder="请输入图片地址" />
+                        </label>
+                        <label for="shop-desc">
+                            <span class="info-data">商品描述：</span>
+                            <input type="text" id="shop-desc" name="description" placeholder="请输入商品描述" />
+                        </label>
+                        <label for="shop-price">
+                            <span class="info-data">商品价格：</span>
+                            <input type="text" id="shop-price" name="priceBase" placeholder="请输入商品价格" />
+                        </label>
+                        <label for="shop-count">
+                            <span class="info-data">商品库存：</span>
+                            <input type="text" id="shop-count" name="remainCount" placeholder="请输入商品库存" />
+                        </label>
+                        <label for="shop-status">
+                            <span class="info-data">商品在线状态：</span>
+                            <input type="text" id="shop-status" name="status" placeholder="请输入商品状态" />
+                        </label>
+                    </div>
+                </form>
+                <p class="manage-form-footer">
+                    <button class="manage-form-btn j-manage-form-btn">提 交</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom"></div>
+    <div id="footer">
+        <p>
+            <a href="###">后台管理系统</a>
+        </p>
+    </div>
+    <script>
+        navList(12);
+    </script>
+</body>
+</html>

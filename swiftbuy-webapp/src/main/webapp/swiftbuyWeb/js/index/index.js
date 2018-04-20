@@ -9,6 +9,8 @@ var shopIndex = {
         var nameSearchData = location.search.split('=') && location.search.split('=')[1];
         $('.j-detail-link').html(decodeURIComponent(nameSearchData));
 
+        this.setCookie('userName', decodeURIComponent(nameSearchData));
+
         // 首页 slider
         this.indexSlider();
         // 地址联动
@@ -78,7 +80,7 @@ var shopIndex = {
         $('.j-search-detail-btn').on('click', function (e) {
             e.preventDefault();
             var curSearchQuery = $('input[name=search]').val();
-            window.location.href = '/swiftbuy/views/shop-list.html?search=' + curSearchQuery;
+            window.location.href = '/swiftbuy/views/shop-list.html?search=' + curSearchQuery + '&goodsList=';
         })
     },
     selectedSearchType: function () {
@@ -141,6 +143,11 @@ var shopIndex = {
                 }
             });
         });
+    },
+    setCookie: function(c_name,value,expiredays) {
+        var exdate = new Date();
+        exdate.setDate(exdate.getDate()+expiredays);
+        document.cookie = c_name + "=" + escape(value) + ((expiredays==null) ? "" : ";expires=" + exdate.toGMTString())
     }
 };
 

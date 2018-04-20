@@ -49,9 +49,13 @@ public class SearchController {
         if (StringUtils.isBlank(query))
             return null;
         List<GoodsBean> goodsBeanList = searchService.searchGoods(query);
+        //记录搜索历史
+
         if (CollectionUtils.isEmpty(goodsBeanList))
             return null;
-        return ListUtils.getSubList(goodsBeanList, start, num);
+        List<GoodsBean> subList = ListUtils.getSubList(goodsBeanList, start, num);
+
+        return subList;
     }
 
     @RequestMapping(value = "/searchCanPage", method = RequestMethod.GET)

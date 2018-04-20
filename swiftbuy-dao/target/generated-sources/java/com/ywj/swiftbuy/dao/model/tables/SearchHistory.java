@@ -11,7 +11,7 @@ package com.ywj.swiftbuy.dao.model.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class SearchHistory extends org.jooq.impl.TableImpl<com.ywj.swiftbuy.dao.model.tables.records.SearchHistoryRecord> {
 
-	private static final long serialVersionUID = -124968522;
+	private static final long serialVersionUID = 1450922426;
 
 	/**
 	 * The singleton instance of <code>swiftbuy.search_history</code>
@@ -45,16 +45,6 @@ public class SearchHistory extends org.jooq.impl.TableImpl<com.ywj.swiftbuy.dao.
 	 * The column <code>swiftbuy.search_history.count</code>.
 	 */
 	public final org.jooq.TableField<com.ywj.swiftbuy.dao.model.tables.records.SearchHistoryRecord, java.lang.Integer> COUNT = createField("count", org.jooq.impl.SQLDataType.INTEGER.defaulted(true), this, "");
-
-	/**
-	 * The column <code>swiftbuy.search_history.category_id</code>.
-	 */
-	public final org.jooq.TableField<com.ywj.swiftbuy.dao.model.tables.records.SearchHistoryRecord, java.lang.Integer> CATEGORY_ID = createField("category_id", org.jooq.impl.SQLDataType.INTEGER.defaulted(true), this, "");
-
-	/**
-	 * The column <code>swiftbuy.search_history.address_id</code>.
-	 */
-	public final org.jooq.TableField<com.ywj.swiftbuy.dao.model.tables.records.SearchHistoryRecord, java.lang.Integer> ADDRESS_ID = createField("address_id", org.jooq.impl.SQLDataType.INTEGER.defaulted(true), this, "");
 
 	/**
 	 * The column <code>swiftbuy.search_history.goods_id</code>.

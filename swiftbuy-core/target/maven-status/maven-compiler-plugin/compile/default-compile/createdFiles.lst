@@ -5,9 +5,11 @@ com/ywj/swiftbuy/bean/GoodsBuyBean.class
 com/ywj/swiftbuy/admin/UserType.class
 com/ywj/swiftbuy/constant/RequestParameter$Strategy.class
 com/ywj/swiftbuy/model/APIResponse.class
+com/ywj/swiftbuy/model/BusinessListItem.class
 com/ywj/swiftbuy/model/JacksonViews$Public.class
 com/ywj/swiftbuy/bean/ShoppingCartBean.class
 com/ywj/swiftbuy/model/SuccessAPIResponse.class
+com/ywj/swiftbuy/model/UserQueryType.class
 com/ywj/swiftbuy/bean/SortStrategy.class
 com/ywj/swiftbuy/bean/HistoryBean.class
 com/ywj/swiftbuy/bean/GoodsBean.class
@@ -22,6 +24,7 @@ com/ywj/swiftbuy/thread/ThreadPool$SingletonHolder.class
 com/ywj/swiftbuy/model/JacksonViews.class
 com/ywj/swiftbuy/constant/RequestParameter$RankListStrategy.class
 com/ywj/swiftbuy/model/BuyBean.class
+com/ywj/swiftbuy/bean/BuyStatus.class
 com/ywj/swiftbuy/constant/RequestParameter.class
 com/ywj/swiftbuy/model/JacksonViews$Admin.class
 com/ywj/swiftbuy/bean/PopularGoodsBean.class

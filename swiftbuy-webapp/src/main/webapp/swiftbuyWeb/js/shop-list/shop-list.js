@@ -1,10 +1,23 @@
 var shopList = {
+    curUserName: '',
     init: function () {
-        var curSearchQuery = location.search.split('=')[1];
+        var curSearQueryArr = location.search.split('&');
+        var curSearchQuery = curSearQueryArr[0].split('=')[1];
         $('input[name=list-search]').val(decodeURIComponent(curSearchQuery));
-        this.getSearchData(curSearchQuery);
+
+        this.curUserName = this.getCookie('userName');
+
+        if (!!curSearQueryArr[1].split('=')[1]) {
+            // 查看购物车列表
+            this.getAllGoodsDataEvent();
+        } else {
+            // 搜索数据列表
+            this.getSearchData(curSearchQuery);
+        }
 
         this.searchBtnEvent();
+
+        $('.j-back-index').attr('href', '/swiftbuy/views/index.html?username=' + this.curUserName);
     },
     searchBtnEvent: function () {
         var that = this;
@@ -57,6 +70,42 @@ var shopList = {
         }
 
         $('.j-list-content-detail').html(shopListHtml);
+    },
+    getAllGoodsDataEvent: function () {
+        var that = this;
+
+        $.ajax({
+            type: "get",
+            dataType: "json",
+            url: "http://localhost:8080/api/shoppingCart/list",
+            data: {
+                username: that.curUserName
+            },
+            success: function (result) {
+                var goodsList = [];
+                for (var i = 0, len = result.length; i < len; i++) {
+                    goodsList.push(result[i].goods);
+                }
+                that.renderShopListData(goodsList);
+            },
+            error: function () {
+                alert("获取商品失败！");
+            }
+        });
+    },
+    getCookie: function(c_name) {
+        if (document.cookie.length>0)
+        {
+            c_start=document.cookie.indexOf(c_name + "=")
+            if (c_start!=-1)
+            {
+                c_start=c_start + c_name.length+1
+                c_end=document.cookie.indexOf(";",c_start)
+                if (c_end==-1) c_end=document.cookie.length
+                return unescape(document.cookie.substring(c_start,c_end))
+            }
+        }
+        return ""
     }
 };
 

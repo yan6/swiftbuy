@@ -11,10 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author ywj
@@ -58,13 +55,35 @@ public class BuyController {
         return new SuccessAPIResponse();
     }
 
+    /**
+     * 点击购买  弹出表单（商品id(不用写入表单),收货人姓名，收货人电话，收货人地址，购买人姓名，确认购买）
+     * 注：1.前端校验库存量,是否登录的校验
+     */
+    @RequestMapping(value = "/buyShop", method = RequestMethod.GET)
+    @ResponseBody
+    public APIResponse buy(@RequestParam(value = "goodsId", required = true) int goodsId,
+                           @RequestParam(value = "receiverName", required = true) String receiverName,
+                           @RequestParam(value = "receiverPhone", required = true) String receiverPhone,
+                           @RequestParam(value = "receiverAddress", required = true) String receiverAddress,
+                           @RequestParam(value = "username", required = true) String username) {
+        //添加历史购买记录
+        BuyBean buy = new BuyBean(goodsId, receiverName, receiverPhone, receiverAddress, username);
+        generateBuy(buy);
+        //库存减1
+        goodsService.updateRemainCount(buy.getGoodsId(), -1);
+        //生成订单
+        buyService.insert(buy);
+        return new SuccessAPIResponse();
+    }
+
+
     private void generateBuy(BuyBean buy) {
         ThreadPool.getInstance().exec(() -> {
             try {
                 String city = addressIpService.getCurrentIdAddress();
                 if (buy.getUid() <= 0 && buy.getBuyUsername() != null) {
                     int uidByUsername = accountService.getUidByUsername(buy.getBuyUsername());
-                    if (uidByUsername<0)
+                    if (uidByUsername < 0)
                         return;
                     buy.setUid(uidByUsername);
                 }

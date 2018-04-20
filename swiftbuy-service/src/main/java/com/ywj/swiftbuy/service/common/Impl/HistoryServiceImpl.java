@@ -2,9 +2,11 @@ package com.ywj.swiftbuy.service.common.Impl;
 
 import com.ywj.swiftbuy.bean.GoodsBean;
 import com.ywj.swiftbuy.bean.HistoryBean;
+import com.ywj.swiftbuy.bean.SearchHistoryBean;
 import com.ywj.swiftbuy.dao.model.tables.History;
 import com.ywj.swiftbuy.dao.model.tables.SearchHistory;
 import com.ywj.swiftbuy.dao.model.tables.records.HistoryRecord;
+import com.ywj.swiftbuy.dao.model.tables.records.SearchHistoryRecord;
 import com.ywj.swiftbuy.service.common.CommonService;
 import com.ywj.swiftbuy.service.common.GoodsService;
 import com.ywj.swiftbuy.service.common.HistoryService;
@@ -147,6 +149,28 @@ public class HistoryServiceImpl extends CommonService implements HistoryService 
             list.add(goods_id);
         }
         return list;
+    }
+
+    //把用户搜索记录加入到search_history
+    public boolean upsert(String query, List<Integer> goodsIdList) {
+        try{
+            for (Integer goodsId : goodsIdList) {
+                SearchHistoryBean searchHistoryBean = selectOneRecord(SEARCH_HISTORY, SEARCH_HISTORY.GOODS_ID.eq(goodsId), SearchHistoryBean.class);
+                if (searchHistoryBean == null) {
+                    //新增记录
+                    SearchHistoryBean newSearchBean = new SearchHistoryBean(query, goodsId);
+                    insert(SEARCH_HISTORY, objectToRecord(newSearchBean, SearchHistoryRecord.class));
+                } else {
+                    //加1
+                    int count = searchHistoryBean.getCount() + 1;
+                    updateField(SEARCH_HISTORY, SEARCH_HISTORY.COUNT, count, SEARCH_HISTORY.GOODS_ID.eq(goodsId));
+                }
+            }
+        }catch (Exception e){
+            LOG.warn("upsert failure");
+            return true;
+        }
+        return true;
     }
 
 

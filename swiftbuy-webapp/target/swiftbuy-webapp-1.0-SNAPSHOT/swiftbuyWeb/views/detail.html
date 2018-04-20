@@ -9,9 +9,16 @@
     <div class="shop-detail">
         <div class="detail-top">
             <div class="index-top-user clearfix">
-                <p class="user-address">北京</p>
+                <p class="user-address">
+                    北京 |
+                    <a class="j-back-index" href="###">首页</a>
+                </p>
                 <p class="user-detail">
-                    <span class="detail-link">购物车</span>
+                    <span class="detail-link">
+                        <a href="/swiftbuy/views/shop-list.html?search=&goodsList=1">
+                            购物车
+                        </a>
+                    </span>
                 </p>
             </div>
             <div class="index-top-search">
@@ -46,6 +53,35 @@
             </ul>
             <p class="index-footer-info">
                 互联网违法和不良信息举报电话：666666 邮箱：163@swiftbuy.com 信用北京 国家企业信用信息公示系统(北京)
+            </p>
+        </div>
+    </div>
+    <div class="shop-buy-dialog j-shop-buy-dialog">
+        <div class="dialog-content">
+            <h3 class="content-head">
+                <span class="title">购买</span>
+                <span class="close-dialog j-close-dialog">X</span>
+            </h3>
+            <form action="" class="shop-buy-dialog-form">
+                <label for="goods-id">
+                    <span class="label-text">商品id：</span><input type="text" id="goods-id" name="goodsId" readonly />
+                </label>
+                <label for="user-name">
+                    <span class="label-text">用户名:</span><input type="text" id="user-name" name="username" readonly/>
+                </label>
+                <label for="receive-name">
+                    <span class="label-text">收货姓名:</span><input type="text" id="receive-name" name="receiverName" placeholder="请输入收货人姓名" />
+                </label>
+                <label for="receive-tel">
+                    <span class="label-text">收货电话：</span><input type="text" id="receive-tel" name="receiverPhone" placeholder="请输入收货人电话" />
+                </label>
+                <label for="receive-addr">
+                    <span class="label-text">收货地址:</span><input type="text" id="receive-addr" name="receiverAddress" placeholder="请输入收货人地址" />
+                </label>
+            </form>
+
+            <p class="shop-buy-dialog-sure">
+                <a class="sure-buy-btn j-sure-buy-btn" href="javascript:;">确认购买</a>
             </p>
         </div>
     </div>

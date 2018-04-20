@@ -4,6 +4,7 @@
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/FailureAPIResponse.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/ReplyBean.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/GoodsBuyBean.java
+/Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/UserQueryType.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/Status.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/web/User.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/constant/RequestParameter.java
@@ -13,6 +14,7 @@
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/JacksonViews.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/utils/DateUtils.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/SuccessAPIResponse.java
+/Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/BusinessListItem.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/PopularGoodsBean.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/RecentGoods.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/CustomizedException.java
@@ -21,6 +23,7 @@
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/GoodsDetailBean.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/SortStrategy.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/utils/ListUtils.java
+/Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/BuyStatus.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/SearchHistory.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/model/APIResponse.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-core/src/main/java/com/ywj/swiftbuy/admin/BusinessBean.java

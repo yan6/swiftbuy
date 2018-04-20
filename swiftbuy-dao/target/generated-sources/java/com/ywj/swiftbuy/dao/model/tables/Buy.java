@@ -11,7 +11,7 @@ package com.ywj.swiftbuy.dao.model.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Buy extends org.jooq.impl.TableImpl<com.ywj.swiftbuy.dao.model.tables.records.BuyRecord> {
 
-	private static final long serialVersionUID = -572187776;
+	private static final long serialVersionUID = 1328545036;
 
 	/**
 	 * The singleton instance of <code>swiftbuy.buy</code>
@@ -65,6 +65,11 @@ public class Buy extends org.jooq.impl.TableImpl<com.ywj.swiftbuy.dao.model.tabl
 	 * The column <code>swiftbuy.buy.goods_id</code>. 商品id
 	 */
 	public final org.jooq.TableField<com.ywj.swiftbuy.dao.model.tables.records.BuyRecord, java.lang.Integer> GOODS_ID = createField("goods_id", org.jooq.impl.SQLDataType.INTEGER, this, "商品id");
+
+	/**
+	 * The column <code>swiftbuy.buy.buy_username</code>. 购买者姓名
+	 */
+	public final org.jooq.TableField<com.ywj.swiftbuy.dao.model.tables.records.BuyRecord, java.lang.String> BUY_USERNAME = createField("buy_username", org.jooq.impl.SQLDataType.VARCHAR.length(255), this, "购买者姓名");
 
 	/**
 	 * Create a <code>swiftbuy.buy</code> table reference
