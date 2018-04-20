@@ -2,6 +2,7 @@ package com.ywj.swiftbuy.webapp.controller;
 
 import com.ywj.swiftbuy.bean.GoodsBean;
 import com.ywj.swiftbuy.model.RecentGoods;
+import com.ywj.swiftbuy.service.common.HistoryService;
 import com.ywj.swiftbuy.service.common.SearchService;
 import com.ywj.swiftbuy.service.utils.NextPageUrlGenerator;
 import com.ywj.swiftbuy.service.utils.NextPageUrlUtils;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author ywj
@@ -33,9 +35,13 @@ public class SearchController {
     @Autowired
     private SearchService searchService;
 
+    @Autowired
+    private HistoryService historyService;
+
 
     /**
      * 不做分页展示接口
+     *
      * @param query
      * @param start
      * @param num
@@ -44,8 +50,8 @@ public class SearchController {
     @RequestMapping(value = "", method = RequestMethod.GET)
     @ResponseBody
     public List<GoodsBean> search(@RequestParam(value = "query", required = false, defaultValue = "") String query,
-                              @RequestParam(value = "start", required = false, defaultValue = "0") int start,
-                              @RequestParam(value = "num", required = false, defaultValue = "10") int num) {
+                                  @RequestParam(value = "start", required = false, defaultValue = "0") int start,
+                                  @RequestParam(value = "num", required = false, defaultValue = "10") int num) {
         if (StringUtils.isBlank(query))
             return null;
         List<GoodsBean> goodsBeanList = searchService.searchGoods(query);
@@ -54,15 +60,18 @@ public class SearchController {
         if (CollectionUtils.isEmpty(goodsBeanList))
             return null;
         List<GoodsBean> subList = ListUtils.getSubList(goodsBeanList, start, num);
-
+        List<Integer> goodsIdList = subList.stream().map(x -> {
+            return x.getId();
+        }).collect(Collectors.toList());
+        historyService.upsert(query, goodsIdList);
         return subList;
     }
 
     @RequestMapping(value = "/searchCanPage", method = RequestMethod.GET)
     @ResponseBody
     public RecentGoods searchCanPage(@RequestParam(value = "query", required = false, defaultValue = "") String query,
-                              @RequestParam(value = "start", required = false, defaultValue = "0") int start,
-                              @RequestParam(value = "num", required = false, defaultValue = "10") int num) {
+                                     @RequestParam(value = "start", required = false, defaultValue = "0") int start,
+                                     @RequestParam(value = "num", required = false, defaultValue = "10") int num) {
         if (StringUtils.isBlank(query))
             return null;
         List<GoodsBean> goodsBeanList = searchService.searchGoods(query);

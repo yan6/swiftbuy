@@ -4,7 +4,6 @@ import com.ywj.swiftbuy.bean.ShoppingCartBean;
 import com.ywj.swiftbuy.bean.ShoppingCartStatus;
 import com.ywj.swiftbuy.bean.SimpleShoppingCartBean;
 import com.ywj.swiftbuy.dao.model.tables.ShoppingCart;
-import com.ywj.swiftbuy.dao.model.tables.records.CategoryRecord;
 import com.ywj.swiftbuy.dao.model.tables.records.ShoppingCartRecord;
 import com.ywj.swiftbuy.service.common.AccountService;
 import com.ywj.swiftbuy.service.common.CommonService;
@@ -18,6 +17,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
+
+/**
+ * @author ywj
+ * 和购物车相关
+ */
 
 @Service
 public class ShoppingCartServiceImpl extends CommonService implements ShoppingCartService {
@@ -42,9 +46,6 @@ public class ShoppingCartServiceImpl extends CommonService implements ShoppingCa
     @Override
     public boolean add(int goodsId, String username) {
         int uid = accountService.getUidByUsername(username);
-//        ShoppingCartBean shoppingCartBean = selectOneRecord(TABLE,
-//                TABLE.UID.eq(uid).and(TABLE.GOODS_ID.eq(goodsId)).and(TABLE.STATUS.eq(ShoppingCartStatus.ONLINE.getValue())),
-//                ShoppingCartBean.class);
         boolean ifExist = exists(TABLE, TABLE.UID.eq(uid).and(TABLE.GOODS_ID.eq(goodsId)));
         if (!ifExist) {
             SimpleShoppingCartBean shoppingCartBean = new SimpleShoppingCartBean();

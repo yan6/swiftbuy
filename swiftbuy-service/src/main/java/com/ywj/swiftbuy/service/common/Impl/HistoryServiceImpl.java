@@ -25,6 +25,7 @@ import java.util.stream.Collectors;
 
 /**
  * @author ywj
+ * 和搜索历史相关
  */
 @Service
 public class HistoryServiceImpl extends CommonService implements HistoryService {
@@ -152,6 +153,7 @@ public class HistoryServiceImpl extends CommonService implements HistoryService 
     }
 
     //把用户搜索记录加入到search_history
+    @Override
     public boolean upsert(String query, List<Integer> goodsIdList) {
         try{
             for (Integer goodsId : goodsIdList) {
@@ -175,7 +177,7 @@ public class HistoryServiceImpl extends CommonService implements HistoryService 
 
 
     /**
-     * 排名前7的商品在所有用户浏览记录中
+     * 排名前num的商品在所有用户浏览记录中
      *
      * @return
      */

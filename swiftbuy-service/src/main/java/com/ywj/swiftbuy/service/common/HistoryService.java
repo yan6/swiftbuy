@@ -16,4 +16,6 @@ public interface HistoryService {
     List<Integer> getGoodsIdList(int uid,int num);
 
     boolean insert(HistoryBean history);
+
+    boolean upsert(String query, List<Integer> goodsIdList);
 }

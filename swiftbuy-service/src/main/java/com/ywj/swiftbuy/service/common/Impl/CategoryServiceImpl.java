@@ -10,6 +10,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author ywj
+ * 和商品分类相关
+ */
+
 @Service
 public class CategoryServiceImpl extends CommonService implements CategoryService {
 

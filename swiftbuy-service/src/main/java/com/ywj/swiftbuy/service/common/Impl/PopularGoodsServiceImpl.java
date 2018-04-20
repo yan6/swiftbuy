@@ -15,6 +15,11 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+/**
+ * @author ywj
+ * 和热门商品相关
+ */
+
 @Service
 public class PopularGoodsServiceImpl extends CommonService implements PopularGoodsService {
 

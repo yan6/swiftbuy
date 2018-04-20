@@ -9,6 +9,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author ywj
+ * 和购买订单相关
+ */
 @Service
 public class BuyServiceImpl extends CommonService implements BuyService {
 

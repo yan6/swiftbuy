@@ -24,6 +24,7 @@ import java.util.Map;
 
 /**
  * @author ywj
+ * 和商家相关
  */
 
 @Service

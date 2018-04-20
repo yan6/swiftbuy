@@ -11,6 +11,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * @author ywj
+ * 和搜索相关
+ */
+
 @Service
 public class SearchServiceImpl extends CommonService implements SearchService {
 

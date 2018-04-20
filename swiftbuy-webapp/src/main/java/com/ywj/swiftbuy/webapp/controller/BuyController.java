@@ -3,6 +3,7 @@ package com.ywj.swiftbuy.webapp.controller;
 import com.ywj.swiftbuy.bean.HistoryBean;
 import com.ywj.swiftbuy.model.APIResponse;
 import com.ywj.swiftbuy.model.BuyBean;
+import com.ywj.swiftbuy.model.FailureAPIResponse;
 import com.ywj.swiftbuy.model.SuccessAPIResponse;
 import com.ywj.swiftbuy.service.common.*;
 import com.ywj.swiftbuy.thread.ThreadPool;
@@ -66,32 +67,33 @@ public class BuyController {
                            @RequestParam(value = "receiverPhone", required = true) String receiverPhone,
                            @RequestParam(value = "receiverAddress", required = true) String receiverAddress,
                            @RequestParam(value = "username", required = true) String username) {
-        //添加历史购买记录
         BuyBean buy = new BuyBean(goodsId, receiverName, receiverPhone, receiverAddress, username);
-        generateBuy(buy);
+        if (buy.getBuyUsername() != null) {
+            int uidByUsername = accountService.getUidByUsername(buy.getBuyUsername());
+            if (uidByUsername < 0)
+                return new FailureAPIResponse("请先登录");
+            buy.setUid(uidByUsername);
+        }
         //库存减1
         goodsService.updateRemainCount(buy.getGoodsId(), -1);
         //生成订单
         buyService.insert(buy);
+        //添加历史购买记录
+        generateBuy(buy);
         return new SuccessAPIResponse();
     }
 
-
     private void generateBuy(BuyBean buy) {
         ThreadPool.getInstance().exec(() -> {
+            String city = "北京市";
             try {
-                String city = addressIpService.getCurrentIdAddress();
-                if (buy.getUid() <= 0 && buy.getBuyUsername() != null) {
-                    int uidByUsername = accountService.getUidByUsername(buy.getBuyUsername());
-                    if (uidByUsername < 0)
-                        return;
-                    buy.setUid(uidByUsername);
-                }
-                HistoryBean historyBean = new HistoryBean(buy.getUid(), buy.getGoodsId(), city, HistoryType.buy.getValue());
-                historyService.insert(historyBean);
+                city = addressIpService.getCurrentIdAddress();
+                Thread.sleep(5000);
             } catch (Exception e) {
                 LOG.warn("get current address failure");
             }
+            HistoryBean historyBean = new HistoryBean(buy.getUid(), buy.getGoodsId(), city, HistoryType.buy.getValue());
+            historyService.insert(historyBean);
         });
     }
 }

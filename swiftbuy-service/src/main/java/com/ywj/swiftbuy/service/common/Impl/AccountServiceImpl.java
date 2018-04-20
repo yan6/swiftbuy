@@ -21,6 +21,11 @@ import java.sql.Timestamp;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * @author ywj
+ * 和账号相关
+ */
+
 @Service
 public class AccountServiceImpl extends CommonService implements AccountService {
 
