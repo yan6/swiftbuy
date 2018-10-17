@@ -9,7 +9,9 @@
     <bookmark url="file://$USER_HOME$/mywork/baobab/baobab-service/src/main/java/com/wandoujia/baobab/service/common/impl/RankListServiceImpl.java" description="&#10;    public boolean updateNewRankList(){&#10;        u..." line="169" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f564e48c-bbde-4750-bb2e-84432cdb7848" name="Default" comment="" />
+    <list default="true" id="f564e48c-bbde-4750-bb2e-84432cdb7848" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/swiftbuy-webapp/target/" />
@@ -51,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="detail.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/detail/detail.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
@@ -61,14 +63,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BusinessService.class" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swiftbuy-service/target/classes/com/ywj/swiftbuy/service/common/BusinessService.class">
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#911#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="379">
+              <caret line="23" column="15" lean-forward="true" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -205,7 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/resources/springMVC.xml" />
         <option value="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/BuyStatus.java" />
@@ -256,6 +255,7 @@
         <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/BusinessService.java" />
         <option value="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/model/AppInfo.java" />
         <option value="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -21100,7 +21100,7 @@
       <workItem from="1537416939992" duration="5022000" />
       <workItem from="1538996724593" duration="20031000" />
       <workItem from="1539595076780" duration="327000" />
-      <workItem from="1539744097426" duration="1521000" />
+      <workItem from="1539744097426" duration="1617000" />
     </task>
     <servers />
   </component>
@@ -21137,7 +21137,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="466575000" />
+    <option name="totallyTimeSpent" value="466671000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -21162,7 +21162,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31757575" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47757575" sideWeight="0.48712447" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848486" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32848486" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848486" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25939393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -21204,13 +21204,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/testcode/TestCodeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/JooqService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -21606,6 +21599,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="23" column="15" lean-forward="true" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
           <folding />
         </state>
       </provider>
