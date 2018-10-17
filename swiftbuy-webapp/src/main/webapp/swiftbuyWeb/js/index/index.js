@@ -42,9 +42,9 @@ var shopIndex = {
         var that = this;
         var renderAllData = [];
         var selectedDefaultData = '?categoryName=电子产品&province=北京市&city=北京市&county=昌平区';
-        var selectedApi = 'http://47.93.189.233:8080/api/selected/recentGoodsList' + selectedDefaultData;
-        var recommendApi = 'http://47.93.189.233:8080/api/selected/recommendGoodsList';
-        var hotApi = 'http://47.93.189.233:8080/api/selected/hotGoodsList';
+        var selectedApi = 'http://47.93.189.233:8080/swiftbuy-webapp/api/selected/recentGoodsList' + selectedDefaultData;
+        var recommendApi = 'http://47.93.189.233:8080/swiftbuy-webapp/api/selected/recommendGoodsList';
+        var hotApi = 'http://47.93.189.233:8080/swiftbuy-webapp/api/selected/hotGoodsList';
 
         $.when($.ajax(selectedApi), $.ajax(recommendApi), $.ajax(hotApi)).then(function (resSelectedData, resRecommendData, resHotData) {
             renderAllData[0] = resSelectedData && resSelectedData[0].goodsBeans;
@@ -108,7 +108,7 @@ var shopIndex = {
             $.ajax({
                 type: "get",
                 dataType: "json",
-                url: "http://47.93.189.233:8080/api/selected/recentGoodsList",
+                url: "http://47.93.189.233:8080/swiftbuy-webapp/api/selected/recentGoodsList",
                 data: {
                     categoryName: that.shopListSearchType,
                     province: addressArr[0] || '北京市',

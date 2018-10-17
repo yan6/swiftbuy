@@ -98,11 +98,8 @@ public class TestServiceImpl extends CommonService implements TestService {
 
     @Test
     public void test3() {
-        List<Integer> list = null;
-        list.stream().forEach(x -> {
-        });
-
-
+        String pwd = Md5Utils.md5("123456");
+        System.out.print("pwd=" + pwd);
     }
 
     private List<Integer> getList() {

@@ -136,7 +136,7 @@
             $.ajax({
                 type: "POST", //方法类型
                 dataType: "json", //预期服务器返回的数据类型
-                url: "http://localhost:8080/api/account/login", //url
+                url: "http://47.93.189.233:8080/api/account/login", //url
                 data: $('#login').serialize(),
                 success: function (result) {
                     if (result != null) {
