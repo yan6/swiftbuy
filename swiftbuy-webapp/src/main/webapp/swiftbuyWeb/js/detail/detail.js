@@ -24,7 +24,7 @@ var detail = {
         $.ajax({
             type: "get",
             dataType: "json",
-            url: "http://localhost:8080/api/goods/detail",
+            url: "http://47.93.189.233:8080/api/goods/detail",
             data: {
                 id: shopId
             },
@@ -120,7 +120,7 @@ var detail = {
             $.ajax({
                 type: "get",
                 dataType: "json",
-                url: "http://localhost:8080/api/shoppingCart/add",
+                url: "http://47.93.189.233:8080/api/shoppingCart/add",
                 data: ajaxData, // JSON.stringify(ajaxData),
                 success: function (result) {
                     if (result && result.resultCode === 200) {
@@ -149,7 +149,7 @@ var detail = {
             $.ajax({
                 type: "get",
                 dataType: "json",
-                url: "http://localhost:8080/api/buy/buyShop",
+                url: "http://47.93.189.233:8080/api/buy/buyShop",
                 data: $('.shop-buy-dialog-form').serialize(),
                 success: function (result) {
                     if (result && result.resultCode === 200) {
