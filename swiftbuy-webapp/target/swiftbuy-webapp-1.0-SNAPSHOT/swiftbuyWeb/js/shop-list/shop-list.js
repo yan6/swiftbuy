@@ -35,7 +35,7 @@ var shopList = {
         $.ajax({
             type: "get",
             dataType: "json",
-            url: "http://47.93.189.233:8080/api/search",
+            url: "http://47.93.189.233:8080/swiftbuy-webapp/api/search",
             data: {
                 query: decodeURIComponent(queryData),
                 start: 0,
@@ -77,7 +77,7 @@ var shopList = {
         $.ajax({
             type: "get",
             dataType: "json",
-            url: "http://47.93.189.233:8080/api/shoppingCart/list",
+            url: "http://47.93.189.233:8080/swiftbuy-webapp/api/shoppingCart/list",
             data: {
                 username: that.curUserName
             },
