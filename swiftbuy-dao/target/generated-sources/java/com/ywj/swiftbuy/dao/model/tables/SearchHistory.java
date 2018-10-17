@@ -11,7 +11,7 @@ package com.ywj.swiftbuy.dao.model.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class SearchHistory extends org.jooq.impl.TableImpl<com.ywj.swiftbuy.dao.model.tables.records.SearchHistoryRecord> {
 
-	private static final long serialVersionUID = 1450922426;
+	private static final long serialVersionUID = -584996359;
 
 	/**
 	 * The singleton instance of <code>swiftbuy.search_history</code>
@@ -94,7 +94,7 @@ public class SearchHistory extends org.jooq.impl.TableImpl<com.ywj.swiftbuy.dao.
 	 */
 	@Override
 	public java.util.List<org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.SearchHistoryRecord>> getKeys() {
-		return java.util.Arrays.<org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.SearchHistoryRecord>>asList(com.ywj.swiftbuy.dao.model.Keys.KEY_SEARCH_HISTORY_PRIMARY);
+		return java.util.Arrays.<org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.SearchHistoryRecord>>asList(com.ywj.swiftbuy.dao.model.Keys.KEY_SEARCH_HISTORY_PRIMARY, com.ywj.swiftbuy.dao.model.Keys.KEY_SEARCH_HISTORY_GOODS_ID);
 	}
 
 	/**

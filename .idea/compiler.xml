@@ -14,16 +14,14 @@
         <module name="swiftbuy-webapp" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="swiftbuy" target="1.5" />
-      <module name="swiftbuy-admin" target="1.8" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="swiftbuy" target="1.8" />
       <module name="swiftbuy-adminWeb" target="1.8" />
       <module name="swiftbuy-common" target="1.8" />
       <module name="swiftbuy-core" target="1.8" />
       <module name="swiftbuy-dao" target="1.8" />
       <module name="swiftbuy-service" target="1.8" />
       <module name="swiftbuy-webapp" target="1.8" />
-      <module name="swiftbuy-webapp-common" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

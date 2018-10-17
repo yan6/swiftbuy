@@ -1,7 +1,10 @@
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/LoginController.java
-/Users/ywj/graduationDesign/swiftbuy/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/AddressAdminController.java
+/Users/ywj/graduationDesign/swiftbuy/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/service/TestService.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/CategoryAdminController.java
+/Users/ywj/graduationDesign/swiftbuy/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/AddressAdminController.java
+/Users/ywj/graduationDesign/swiftbuy/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/service/TestServiceImpl.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/ToolController.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/UserController.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/BusinessAccountController.java
+/Users/ywj/graduationDesign/swiftbuy/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/model/AppInfo.java
 /Users/ywj/graduationDesign/swiftbuy/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/controller/GoodsAdminController.java

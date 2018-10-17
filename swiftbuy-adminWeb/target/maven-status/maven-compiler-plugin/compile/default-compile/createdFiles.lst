@@ -6,5 +6,8 @@ com/ywj/swiftbuy/admin/controller/CategoryAdminController.class
 com/ywj/swiftbuy/admin/controller/AddressAdminController.class
 com/ywj/swiftbuy/admin/controller/GoodsAdminController.class
 com/ywj/swiftbuy/admin/controller/ToolController.class
+com/ywj/swiftbuy/admin/service/TestService.class
+com/ywj/swiftbuy/admin/service/TestServiceImpl.class
 com/ywj/swiftbuy/admin/controller/GoodsAdminController$1.class
 com/ywj/swiftbuy/admin/controller/UserController.class
+com/ywj/swiftbuy/admin/model/AppInfo.class

@@ -55,7 +55,6 @@ public class SearchController {
         if (StringUtils.isBlank(query))
             return null;
         List<GoodsBean> goodsBeanList = searchService.searchGoods(query);
-        //记录搜索历史
 
         if (CollectionUtils.isEmpty(goodsBeanList))
             return null;
@@ -63,6 +62,7 @@ public class SearchController {
         List<Integer> goodsIdList = subList.stream().map(x -> {
             return x.getId();
         }).collect(Collectors.toList());
+        //记录搜索历史
         historyService.upsert(query, goodsIdList);
         return subList;
     }

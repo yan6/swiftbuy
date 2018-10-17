@@ -1,7 +1,7 @@
 db.driverName=com.mysql.jdbc.Driver
-db.url=jdbc:mysql://60.205.208.79:3307/baobab?useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true&amp;jdbcCompliantTruncation=false
-db.username=baobab
-db.password=RdM9oyQpsqe9
+db.url=jdbc:mysql://localhost:3306/swiftbuy?useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true&amp;jdbcCompliantTruncation=false
+db.username=root
+db.password=root
 
 
 ## dai yong

@@ -74,6 +74,11 @@ public class Tables {
 	public static final com.ywj.swiftbuy.dao.model.tables.ShoppingCart SHOPPING_CART = com.ywj.swiftbuy.dao.model.tables.ShoppingCart.SHOPPING_CART;
 
 	/**
+	 * The table swiftbuy.test_code
+	 */
+	public static final com.ywj.swiftbuy.dao.model.tables.TestCode TEST_CODE = com.ywj.swiftbuy.dao.model.tables.TestCode.TEST_CODE;
+
+	/**
 	 * The table swiftbuy.user
 	 */
 	public static final com.ywj.swiftbuy.dao.model.tables.User USER = com.ywj.swiftbuy.dao.model.tables.User.USER;

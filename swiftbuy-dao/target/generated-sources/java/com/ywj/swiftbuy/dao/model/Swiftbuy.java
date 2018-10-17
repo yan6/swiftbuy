@@ -11,7 +11,7 @@ package com.ywj.swiftbuy.dao.model;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Swiftbuy extends org.jooq.impl.SchemaImpl {
 
-	private static final long serialVersionUID = -1429159517;
+	private static final long serialVersionUID = 397006995;
 
 	/**
 	 * The singleton instance of <code>swiftbuy</code>
@@ -46,6 +46,7 @@ public class Swiftbuy extends org.jooq.impl.SchemaImpl {
 			com.ywj.swiftbuy.dao.model.tables.SearchHistory.SEARCH_HISTORY,
 			com.ywj.swiftbuy.dao.model.tables.SelectedGoods.SELECTED_GOODS,
 			com.ywj.swiftbuy.dao.model.tables.ShoppingCart.SHOPPING_CART,
+			com.ywj.swiftbuy.dao.model.tables.TestCode.TEST_CODE,
 			com.ywj.swiftbuy.dao.model.tables.User.USER);
 	}
 }

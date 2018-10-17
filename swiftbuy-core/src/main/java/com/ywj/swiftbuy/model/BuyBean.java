@@ -46,5 +46,4 @@ public class BuyBean {
         this.createTime = new Date();
         this.status= BuyStatus.success.getValue();
     }
-
 }

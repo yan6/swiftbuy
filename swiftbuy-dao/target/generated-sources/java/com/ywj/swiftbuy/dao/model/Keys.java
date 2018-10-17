@@ -30,6 +30,7 @@ public class Keys {
 	public static final org.jooq.Identity<com.ywj.swiftbuy.dao.model.tables.records.SearchHistoryRecord, java.lang.Integer> IDENTITY_SEARCH_HISTORY = Identities0.IDENTITY_SEARCH_HISTORY;
 	public static final org.jooq.Identity<com.ywj.swiftbuy.dao.model.tables.records.SelectedGoodsRecord, java.lang.Integer> IDENTITY_SELECTED_GOODS = Identities0.IDENTITY_SELECTED_GOODS;
 	public static final org.jooq.Identity<com.ywj.swiftbuy.dao.model.tables.records.ShoppingCartRecord, java.lang.Integer> IDENTITY_SHOPPING_CART = Identities0.IDENTITY_SHOPPING_CART;
+	public static final org.jooq.Identity<com.ywj.swiftbuy.dao.model.tables.records.TestCodeRecord, java.lang.Integer> IDENTITY_TEST_CODE = Identities0.IDENTITY_TEST_CODE;
 	public static final org.jooq.Identity<com.ywj.swiftbuy.dao.model.tables.records.UserRecord, java.lang.Integer> IDENTITY_USER = Identities0.IDENTITY_USER;
 
 	// -------------------------------------------------------------------------
@@ -47,8 +48,10 @@ public class Keys {
 	public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.PopularGoodsRecord> KEY_POPULAR_GOODS_PRIMARY = UniqueKeys0.KEY_POPULAR_GOODS_PRIMARY;
 	public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.ReplyRecord> KEY_REPLY_PRIMARY = UniqueKeys0.KEY_REPLY_PRIMARY;
 	public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.SearchHistoryRecord> KEY_SEARCH_HISTORY_PRIMARY = UniqueKeys0.KEY_SEARCH_HISTORY_PRIMARY;
+	public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.SearchHistoryRecord> KEY_SEARCH_HISTORY_GOODS_ID = UniqueKeys0.KEY_SEARCH_HISTORY_GOODS_ID;
 	public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.SelectedGoodsRecord> KEY_SELECTED_GOODS_PRIMARY = UniqueKeys0.KEY_SELECTED_GOODS_PRIMARY;
 	public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.ShoppingCartRecord> KEY_SHOPPING_CART_PRIMARY = UniqueKeys0.KEY_SHOPPING_CART_PRIMARY;
+	public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.TestCodeRecord> KEY_TEST_CODE_PRIMARY = UniqueKeys0.KEY_TEST_CODE_PRIMARY;
 	public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.UserRecord> KEY_USER_PRIMARY = UniqueKeys0.KEY_USER_PRIMARY;
 	public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.UserRecord> KEY_USER_USERNAME = UniqueKeys0.KEY_USER_USERNAME;
 
@@ -74,6 +77,7 @@ public class Keys {
 		public static org.jooq.Identity<com.ywj.swiftbuy.dao.model.tables.records.SearchHistoryRecord, java.lang.Integer> IDENTITY_SEARCH_HISTORY = createIdentity(com.ywj.swiftbuy.dao.model.tables.SearchHistory.SEARCH_HISTORY, com.ywj.swiftbuy.dao.model.tables.SearchHistory.SEARCH_HISTORY.ID);
 		public static org.jooq.Identity<com.ywj.swiftbuy.dao.model.tables.records.SelectedGoodsRecord, java.lang.Integer> IDENTITY_SELECTED_GOODS = createIdentity(com.ywj.swiftbuy.dao.model.tables.SelectedGoods.SELECTED_GOODS, com.ywj.swiftbuy.dao.model.tables.SelectedGoods.SELECTED_GOODS.ID);
 		public static org.jooq.Identity<com.ywj.swiftbuy.dao.model.tables.records.ShoppingCartRecord, java.lang.Integer> IDENTITY_SHOPPING_CART = createIdentity(com.ywj.swiftbuy.dao.model.tables.ShoppingCart.SHOPPING_CART, com.ywj.swiftbuy.dao.model.tables.ShoppingCart.SHOPPING_CART.ID);
+		public static org.jooq.Identity<com.ywj.swiftbuy.dao.model.tables.records.TestCodeRecord, java.lang.Integer> IDENTITY_TEST_CODE = createIdentity(com.ywj.swiftbuy.dao.model.tables.TestCode.TEST_CODE, com.ywj.swiftbuy.dao.model.tables.TestCode.TEST_CODE.ID);
 		public static org.jooq.Identity<com.ywj.swiftbuy.dao.model.tables.records.UserRecord, java.lang.Integer> IDENTITY_USER = createIdentity(com.ywj.swiftbuy.dao.model.tables.User.USER, com.ywj.swiftbuy.dao.model.tables.User.USER.UID);
 	}
 
@@ -89,8 +93,10 @@ public class Keys {
 		public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.PopularGoodsRecord> KEY_POPULAR_GOODS_PRIMARY = createUniqueKey(com.ywj.swiftbuy.dao.model.tables.PopularGoods.POPULAR_GOODS, com.ywj.swiftbuy.dao.model.tables.PopularGoods.POPULAR_GOODS.ID);
 		public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.ReplyRecord> KEY_REPLY_PRIMARY = createUniqueKey(com.ywj.swiftbuy.dao.model.tables.Reply.REPLY, com.ywj.swiftbuy.dao.model.tables.Reply.REPLY.ID);
 		public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.SearchHistoryRecord> KEY_SEARCH_HISTORY_PRIMARY = createUniqueKey(com.ywj.swiftbuy.dao.model.tables.SearchHistory.SEARCH_HISTORY, com.ywj.swiftbuy.dao.model.tables.SearchHistory.SEARCH_HISTORY.ID);
+		public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.SearchHistoryRecord> KEY_SEARCH_HISTORY_GOODS_ID = createUniqueKey(com.ywj.swiftbuy.dao.model.tables.SearchHistory.SEARCH_HISTORY, com.ywj.swiftbuy.dao.model.tables.SearchHistory.SEARCH_HISTORY.GOODS_ID);
 		public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.SelectedGoodsRecord> KEY_SELECTED_GOODS_PRIMARY = createUniqueKey(com.ywj.swiftbuy.dao.model.tables.SelectedGoods.SELECTED_GOODS, com.ywj.swiftbuy.dao.model.tables.SelectedGoods.SELECTED_GOODS.ID);
 		public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.ShoppingCartRecord> KEY_SHOPPING_CART_PRIMARY = createUniqueKey(com.ywj.swiftbuy.dao.model.tables.ShoppingCart.SHOPPING_CART, com.ywj.swiftbuy.dao.model.tables.ShoppingCart.SHOPPING_CART.ID);
+		public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.TestCodeRecord> KEY_TEST_CODE_PRIMARY = createUniqueKey(com.ywj.swiftbuy.dao.model.tables.TestCode.TEST_CODE, com.ywj.swiftbuy.dao.model.tables.TestCode.TEST_CODE.ID);
 		public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.UserRecord> KEY_USER_PRIMARY = createUniqueKey(com.ywj.swiftbuy.dao.model.tables.User.USER, com.ywj.swiftbuy.dao.model.tables.User.USER.UID);
 		public static final org.jooq.UniqueKey<com.ywj.swiftbuy.dao.model.tables.records.UserRecord> KEY_USER_USERNAME = createUniqueKey(com.ywj.swiftbuy.dao.model.tables.User.USER, com.ywj.swiftbuy.dao.model.tables.User.USER.USERNAME);
 	}
