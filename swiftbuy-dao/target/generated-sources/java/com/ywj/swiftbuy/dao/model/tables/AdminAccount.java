@@ -11,7 +11,7 @@ package com.ywj.swiftbuy.dao.model.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AdminAccount extends org.jooq.impl.TableImpl<com.ywj.swiftbuy.dao.model.tables.records.AdminAccountRecord> {
 
-	private static final long serialVersionUID = -525994642;
+	private static final long serialVersionUID = -87186326;
 
 	/**
 	 * The singleton instance of <code>swiftbuy.admin_account</code>
@@ -39,7 +39,7 @@ public class AdminAccount extends org.jooq.impl.TableImpl<com.ywj.swiftbuy.dao.m
 	/**
 	 * The column <code>swiftbuy.admin_account.password</code>.
 	 */
-	public final org.jooq.TableField<com.ywj.swiftbuy.dao.model.tables.records.AdminAccountRecord, java.lang.String> PASSWORD = createField("password", org.jooq.impl.SQLDataType.VARCHAR.length(255).nullable(false).defaulted(true), this, "");
+	public final org.jooq.TableField<com.ywj.swiftbuy.dao.model.tables.records.AdminAccountRecord, java.lang.String> PASSWORD = createField("password", org.jooq.impl.SQLDataType.VARCHAR.length(255), this, "");
 
 	/**
 	 * The column <code>swiftbuy.admin_account.update_time</code>.

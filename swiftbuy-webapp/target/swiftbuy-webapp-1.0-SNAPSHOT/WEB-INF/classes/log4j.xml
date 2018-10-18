@@ -25,7 +25,7 @@
     </logger>
 
     <logger name="org.springframework.web.servlet.mvc">
-        <level value="DEBUG" />
+        <level value="INFO" />
     </logger>
 
     <logger name="com.google.code.yanf4j">
@@ -45,8 +45,8 @@
     </logger>
 
     <root>
-        <level value="DEBUG" />
-        <appender-ref ref="console" />
+        <level value="INFO" />
+        <appender-ref ref="file" />
     </root>
 
 </log4j:configuration>

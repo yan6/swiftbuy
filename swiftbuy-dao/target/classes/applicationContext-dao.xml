@@ -9,15 +9,15 @@
 
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
         <property name="driverClass" value="com.mysql.jdbc.Driver" />
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/swiftbuy?useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true&amp;jdbcCompliantTruncation=false" />
-        <property name="user" value="root" />
-        <property name="password" value="root" />
-        <property name="initialPoolSize" value="50" />
+        <property name="jdbcUrl" value="jdbc:mysql://47.93.189.233:3307/swiftbuy?useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true&amp;jdbcCompliantTruncation=false" />
+        <property name="user" value="skywj" />
+        <property name="password" value="sw#32j2ejIwLw8#wsL" />
+        <property name="initialPoolSize" value="20" />
         <property name="minPoolSize" value="10" />
-        <property name="maxPoolSize" value="100" />
+        <property name="maxPoolSize" value="50" />
         <property name="autoCommitOnClose" value="true" />
         <property name="testConnectionOnCheckin" value="true" />
-        <!--<property name="checkoutTimeout" value="5000" />-->
+        <property name="checkoutTimeout" value="20000" />
         <property name="idleConnectionTestPeriod" value="50" />
         <property name="acquireIncrement" value="1" />
         <property name="maxIdleTime" value="25200" />  <!-- How long to keep unused connections around. MySQL times out idle connections after 8 hours(28,800 seconds), so ensure this value is below MySQL idle timeout-->
