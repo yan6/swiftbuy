@@ -140,7 +140,7 @@
                 data: $('#login').serialize(),
                 success: function (result) {
                     if (result != null) {
-                        window.location.href = "/swiftbuy/views/index.html?username=" + result.username;
+                        window.location.href = "/swiftbuy-webapp/swiftbuy/views/index.html?username=" + result.username;
                     } else {
                         alert(" 用户名或密码错误！")
                     }

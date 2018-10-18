@@ -62,7 +62,7 @@ var shopIndex = {
                     '<img class="item-img" src="'+ renderData[i][j].image +'" alt="">' +
                     '<div class="item-detail">' +
                     '<p class="name">' +
-                    '<a href="/swiftbuy/views/detail.html?id='+ renderData[i][j].id +'">'+ renderData[i][j].name +'</a>' +
+                    '<a href="/swiftbuy-webapp/swiftbuy/views/detail.html?id='+ renderData[i][j].id +'">'+ renderData[i][j].name +'</a>' +
                     '</p>' +
                     '<p class="description">'+ renderData[i][j].description +'</p>' +
                     '<p class="price-num clearfix">' +
@@ -80,7 +80,7 @@ var shopIndex = {
         $('.j-search-detail-btn').on('click', function (e) {
             e.preventDefault();
             var curSearchQuery = $('input[name=search]').val();
-            window.location.href = '/swiftbuy/views/shop-list.html?search=' + curSearchQuery + '&goodsList=';
+            window.location.href = '/swiftbuy-webapp/swiftbuy/views/shop-list.html?search=' + curSearchQuery + '&goodsList=';
         })
     },
     selectedSearchType: function () {
@@ -123,7 +123,7 @@ var shopIndex = {
                                 '<img class="item-img" src="'+ result.goodsBeans[i].image +'" alt="">' +
                                 '<div class="item-detail">' +
                                 '<p class="name">' +
-                                '<a href="/swiftbuy/views/detail.html?id='+ result.goodsBeans[i].id +'">'+ result.goodsBeans[i].name +'</a>' +
+                                '<a href="/swiftbuy-webapp/swiftbuy/views/detail.html?id='+ result.goodsBeans[i].id +'">'+ result.goodsBeans[i].name +'</a>' +
                                 '</p>' +
                                 '<p class="description">'+ result.goodsBeans[i].description +'</p>' +
                                 '<p class="price-num clearfix">' +
