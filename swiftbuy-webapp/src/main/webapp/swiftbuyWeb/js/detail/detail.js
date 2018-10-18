@@ -15,7 +15,7 @@ var detail = {
 
         this.sureBuyBtnEvent();
 
-        $('.j-back-index').attr('href', '/swiftbuy/views/index.html?username=' + this.curUserName);
+        $('.j-back-index').attr('href', '/swiftbuy-webapp/swiftbuy/views/index.html?username=' + this.curUserName);
     },
     getShopData: function (shopId) {
         var that = this;

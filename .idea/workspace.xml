@@ -10,75 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f564e48c-bbde-4750-bb2e-84432cdb7848" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-service/target/test-classes/applicationContext-service-test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-service/target/test-classes/service/MainTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-service/target/test-classes/service/TransactionServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/admin/service/TestServiceImpl.class" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/classes/com/ywj/swiftbuy/admin/service/TestServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-common-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-core-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-core-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-dao-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/swiftbuy-adminWeb-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-service-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-common/target/swiftbuy-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-common/target/swiftbuy-common-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-core/target/swiftbuy-core-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-core/target/swiftbuy-core-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/tables/AdminAccount.class" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/classes/com/ywj/swiftbuy/dao/model/tables/AdminAccount.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/swiftbuy-dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/swiftbuy-dao-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/target/swiftbuy-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-service/target/swiftbuy-service-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-common-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-core-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-core-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-dao-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/lib/swiftbuy-service-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/bg_tab_x.png" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/bg_tab_x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/close_qcode.gif" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/close_qcode.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/flag_qcode.gif" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/flag_qcode.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_access.gif" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_access.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_client.gif" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_client.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_client_download.png" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_client_download.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_control.png" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_control.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_form.gif" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_form.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_localization.gif" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_localization.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_login_top.gif" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_login_top.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_storage.gif" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/icon_storage.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/index/drop-arrow.png" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/index/drop-arrow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/index/slider/001.jpg" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/index/slider/001.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/index/slider/002.jpg" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/index/slider/002.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/index/slider/003.jpg" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/index/slider/003.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/index/slider/004.jpg" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/index/slider/004.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/index/slider/005.jpg" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/index/slider/005.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/logo.gif" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/logo.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/mid_banner/banner_01.png" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/mid_banner/banner_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/mid_banner/banner_01_repeat.png" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/mid_banner/banner_01_repeat.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/mid_banner/banner_02.gif" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/mid_banner/banner_02.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/mid_banner/banner_02_repeat.gif" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/mid_banner/banner_02_repeat.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/mid_banner/banner_03.png" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/mid_banner/banner_03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/mid_banner/banner_03_repeat.png" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/mid_banner/banner_03_repeat.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/pic_qcode.png" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/pic_qcode.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/popup_hint.gif" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/popup_hint.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/popup_hint.png" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/popup_hint.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/popup_hint_bottom.gif" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/popup_hint_bottom.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/popup_hint_bottom.png" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/images/popup_hint_bottom.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp.war" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-adminWeb/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/swiftbuy-adminWeb/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-common/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/swiftbuy-common/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-core/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/swiftbuy-core/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/src/main/resources/database.properties.online" afterPath="$PROJECT_DIR$/swiftbuy-dao/src/main/resources/database.properties.online" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/classes/applicationContext-dao.xml" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/classes/applicationContext-dao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/classes/database.properties.online" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/classes/database.properties.online" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/tables/AdminAccount.java" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/generated-sources/java/com/ywj/swiftbuy/dao/model/tables/AdminAccount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-dao/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/swiftbuy-dao/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/swiftbuy-service/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/classes/log4j.xml" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/classes/log4j.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/classes/log4j.xml" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/classes/log4j.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/css/home.css" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/css/index/city-picker.css" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/css/index/city-picker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/js/city-picker.data.js" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/js/city-picker.data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/js/city-picker.js" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/js/city-picker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/js/jquery-1.7.2.js" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/js/jquery-1.7.2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/js/jssor.slider-27.1.0.min.js" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/js/jssor.slider-27.1.0.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/register.html" afterPath="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/swiftbuyWeb/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/detail/detail.js" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/detail/detail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/index/index.js" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/index/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/shop-list/shop-list.js" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/shop-list/shop-list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/login.html" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/shop-list.html" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/shop-list.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -129,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.properties.online" pinned="false" current-in-tab="true">
+      <file leaf-file-name="database.properties.online" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swiftbuy-dao/src/main/resources/database.properties.online">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+              <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -142,8 +78,58 @@
       <file leaf-file-name="applicationContext-dao.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swiftbuy-dao/src/main/resources/applicationContext-dao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="294">
               <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="141" column="41" lean-forward="true" selection-start-line="141" selection-start-column="41" selection-end-line="141" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/index/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="122" column="75" lean-forward="true" selection-start-line="122" selection-start-column="75" selection-end-line="122" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shop-list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/shop-list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shop-list.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/shop-list/shop-list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/detail/detail.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -168,7 +154,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.city-picker-span</find>
       <find>search-detail-input</find>
       <find>.shop-content-item</find>
       <find>console</find>
@@ -198,6 +183,7 @@
       <find>http://localhost:8080</find>
       <find>http://47.93.189.233:8080</find>
       <find>ADMIN_ACCOUNT</find>
+      <find>swiftbuy</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -222,7 +208,6 @@
         <option value="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/SearchHistoryBean.java" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/css/detail/detail.css" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/detail.html" />
-        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/shop-list.html" />
         <option value="$PROJECT_DIR$/swiftbuy-core/src/main/java/com/ywj/swiftbuy/bean/SimpleShoppingCartBean.java" />
         <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/HistoryService.java" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/BuyController.java" />
@@ -261,15 +246,16 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/service/TestServiceImpl.java" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/java/com/ywj/swiftbuy/webapp/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/login.html" />
-        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/shop-list/shop-list.js" />
-        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/detail/detail.js" />
-        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/index/index.js" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/swiftbuy-webapp/target/swiftbuy-webapp-1.0-SNAPSHOT/WEB-INF/classes/log4j.xml" />
         <option value="$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/Impl/AccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/swiftbuy-dao/src/main/resources/applicationContext-dao.xml" />
         <option value="$PROJECT_DIR$/swiftbuy-dao/src/main/resources/database.properties.online" />
+        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/login.html" />
+        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/shop-list.html" />
+        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/shop-list/shop-list.js" />
+        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/detail/detail.js" />
+        <option value="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/index/index.js" />
       </list>
     </option>
   </component>
@@ -958,6 +944,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="swiftbuyWeb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swiftbuy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swiftbuy" type="462c0819:PsiDirectoryNode" />
+              <item name="swiftbuy-webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="swiftbuyWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -21381,7 +21377,7 @@
       <workItem from="1537416939992" duration="5022000" />
       <workItem from="1538996724593" duration="20031000" />
       <workItem from="1539595076780" duration="327000" />
-      <workItem from="1539744097426" duration="14170000" />
+      <workItem from="1539744097426" duration="15164000" />
     </task>
     <servers />
   </component>
@@ -21418,7 +21414,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="479224000" />
+    <option name="totallyTimeSpent" value="480218000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -21485,14 +21481,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/common/BusinessService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-service/src/main/java/com/ywj/swiftbuy/service/utils/BigFileReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -21692,38 +21680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/detail/detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="149" column="28" lean-forward="false" selection-start-line="149" selection-start-column="28" selection-end-line="149" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/index/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="132" column="11" lean-forward="false" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/shop-list/shop-list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="79" column="59" lean-forward="false" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-adminWeb/src/main/java/com/ywj/swiftbuy/admin/service/TestServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-30">
@@ -21864,14 +21820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-dao/src/main/resources/applicationContext-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-dao/src/main/resources/database.properties.staging">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -21899,7 +21847,55 @@
     <entry file="file://$PROJECT_DIR$/swiftbuy-dao/src/main/resources/database.properties.online">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-dao/src/main/resources/applicationContext-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="141" column="41" lean-forward="true" selection-start-line="141" selection-start-column="41" selection-end-line="141" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/shop-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/shop-list/shop-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/detail/detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="122" column="75" lean-forward="true" selection-start-line="122" selection-start-column="75" selection-end-line="122" selection-end-column="75" />
           <folding />
         </state>
       </provider>
