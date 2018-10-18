@@ -10,6 +10,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f564e48c-bbde-4750-bb2e-84432cdb7848" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/admin/BusinessBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/admin/CategoryBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/admin/UserType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/bean/BuyStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/bean/CustomizedException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/bean/GoodsBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/bean/GoodsBuyBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/bean/HistoryBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/bean/PopularGoodsBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/bean/ReplyBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/bean/SearchHistoryBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/bean/ShoppingCartBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/bean/ShoppingCartStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/bean/SimpleShoppingCartBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/bean/SortStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/bean/Status.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/constant/RequestParameter$ActionType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/constant/RequestParameter$RankListStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/constant/RequestParameter$ReplyStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/constant/RequestParameter$Strategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/constant/RequestParameter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/model/APIResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/model/BusinessListItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/model/BuyBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/model/CommonResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/model/FailureAPIResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/model/GoodsDetailBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/model/JacksonViews$Admin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/model/JacksonViews$Public.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/model/JacksonViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/model/RecentGoods.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/model/SuccessAPIResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/model/UserListItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/model/UserQueryType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/testbean/BriefCard.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/testbean/TagBriefCard.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/thread/ThreadPool$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/thread/ThreadPool$SingletonHolder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/thread/ThreadPool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/utils/DateUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/utils/ListUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/web/Address.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/web/HistoryType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/classes/com/ywj/swiftbuy/web/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/swiftbuy-core/target/swiftbuy-core-1.0-SNAPSHOT.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/detail.html" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/index.html" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/shop-list.html" afterPath="$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/shop-list.html" />
@@ -66,8 +114,8 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="141" column="41" lean-forward="false" selection-start-line="141" selection-start-column="41" selection-end-line="141" selection-end-column="41" />
+            <state relative-caret-position="189">
+              <caret line="142" column="48" lean-forward="false" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -86,8 +134,8 @@
       <file leaf-file-name="shop-list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/shop-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="17" column="51" lean-forward="false" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+            <state relative-caret-position="69">
+              <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -96,8 +144,8 @@
       <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+            <state relative-caret-position="136">
+              <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -106,8 +154,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="66" />
+            <state relative-caret-position="99">
+              <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -152,8 +200,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>shop-content-item</find>
-      <find>searchAll</find>
       <find>in</find>
       <find>left_menu</find>
       <find>nav_dot</find>
@@ -182,6 +228,8 @@
       <find>/swiftbuy-webapp/swiftbuy</find>
       <find>/swiftbuy-webapp/swiftbuy/views/shop-list.html</find>
       <find>views/shop-list.html</find>
+      <find>swiftbuy/views/shop-list.html</find>
+      <find>/swiftbuyWeb/views/shop-list.html</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -21375,7 +21423,7 @@
       <workItem from="1537416939992" duration="5022000" />
       <workItem from="1538996724593" duration="20031000" />
       <workItem from="1539595076780" duration="327000" />
-      <workItem from="1539744097426" duration="17340000" />
+      <workItem from="1539744097426" duration="17772000" />
     </task>
     <servers />
   </component>
@@ -21412,7 +21460,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="482394000" />
+    <option name="totallyTimeSpent" value="482826000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -21447,9 +21495,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47757575" sideWeight="0.48712447" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848486" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848486" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5369697" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5369697" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29470673" sideWeight="0.46666667" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29470673" sideWeight="0.53333336" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29470673" sideWeight="0.53333336" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -21842,14 +21890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="141" column="41" lean-forward="false" selection-start-line="141" selection-start-column="41" selection-end-line="141" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/js/shop-list/shop-list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -21874,26 +21914,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/shop-list.html">
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="17" column="51" lean-forward="false" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        <state relative-caret-position="189">
+          <caret line="142" column="48" lean-forward="false" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        <state relative-caret-position="136">
+          <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/shop-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swiftbuy-webapp/src/main/webapp/swiftbuyWeb/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="66" />
+        <state relative-caret-position="99">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
           <folding />
         </state>
       </provider>
