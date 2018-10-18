@@ -15,7 +15,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="swiftbuy" target="1.8" />
+      <module name="swiftbuy" target="1.5" />
       <module name="swiftbuy-adminWeb" target="1.8" />
       <module name="swiftbuy-common" target="1.8" />
       <module name="swiftbuy-core" target="1.8" />
